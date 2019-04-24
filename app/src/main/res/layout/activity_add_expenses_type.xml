@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_product"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.product_info.NewProduct">
+
+
+    <LinearLayout
+        android:id="@+id/ll_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/rectangleshape"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+
+
+        <!-- Product type Label -->
+
+
+
+        <!-- Brand name Label -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+
+            <EditText android:id="@+id/new_expType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textColorHint="@color/mustardbrown"
+                android:inputType="text"
+                android:hint=" New Expenses Type"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_addexpType"
+                android:layout_marginRight="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:padding="16dp"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Add Expenses Type"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

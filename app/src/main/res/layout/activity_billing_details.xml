@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_billing_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.billing_module.BillingDetails">
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+
+    </View>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:orientation="horizontal"
+         android:layout_margin="20dp"
+         android:id="@+id/instant_bill"
+         android:layout_height="wrap_content">
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:src="@drawable/instant_bill"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:textColor="@color/color_grey"
+             android:text="Instant Bill"
+             android:layout_height="wrap_content" />
+
+     </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/make_bill"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/make_abill"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/color_grey"
+            android:text="Make a bill"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/invoice_history"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/invoice_history"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/color_grey"
+                android:text="Invoice History"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/make_a_qouatation"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/quotation"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView4" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/color_grey"
+            android:text="Make a Quotation"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/Quotation_history"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/quotation_history"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/color_grey"
+                android:text="Quotation  History"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+
+    </View>
+
+</LinearLayout>

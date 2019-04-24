@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/black">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mustardbrown">
+
+        </View>
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/black">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="30dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+
+
+
+            <!--<View-->
+            <!--android:id="@+id/myRectangleView"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/rectangle"/>-->
+
+            <LinearLayout
+                android:id="@+id/ll_userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangleshape"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Product type Label -->
+
+
+
+
+                <!-- Brand name Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp">
+
+
+                    <EditText android:id="@+id/input_customerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:background="@drawable/bottomline"
+                        android:inputType="textCapWords"
+                        android:hint=" Name"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:layout_marginBottom="8dp">-->
+
+                    <!--<EditText android:id="@+id/input_cutomerAddress"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:inputType="text"-->
+                        <!--android:background="@drawable/bottomline"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:hint="Address" />-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <!-- Item MRP Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText android:id="@+id/input_customerMobile"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content"
+                        android:inputType="phone"
+                        android:maxEms="10"
+                        android:maxLength="10"
+                        android:background="@drawable/bottomline"
+                        android:hint="Mobile" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Original prize Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText android:id="@+id/input_customeremail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="email" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2.01"
+                        android:letterSpacing="0.05"
+                        android:textSize="14dp"
+                        android:text="GST Registered"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/gst_details"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:text="Yes"
+                            android:textSize="14dp"
+                            style="@style/RadioButton"
+                            android:textColor="@color/color_grey"
+                            android:checked="true"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/gst_yes"/>
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/gst_no"
+                            style="@style/RadioButton"
+                            android:backgroundTint="@color/mustardbrown"
+                            android:textColor="@color/color_grey"
+                            android:text="No"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/gst_linear"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp">
+
+                        <EditText android:id="@+id/input_gst"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="textCapCharacters"
+                            android:maxLength="15"
+                            android:textColor="@color/color_grey"
+                            android:hint="GSTIN Ex. 22 AAAAA0000A 1Z5" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="bottom"
+                        android:text="Place of Supply:"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="wrap_content">
+
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:id="@+id/billing_supplier"
+                            android:overlapAnchor="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content">
+                        </Spinner>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:letterSpacing="0.05"
+                        android:textSize="14dp"
+                        android:text="Home delivery"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4" />
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/cust_delivery_button"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:text="Yes"
+                            android:textSize="14dp"
+                            style="@style/RadioButton"
+                            android:textColor="@color/color_grey"
+                            android:checked="true"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cust_radioButton1" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/cust_radioButton2"
+                            style="@style/RadioButton"
+                            android:backgroundTint="@color/mustardbrown"
+                            android:textColor="@color/color_grey"
+                            android:text="No"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/cust_linear_address"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText android:id="@+id/input_cutomerAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:textColor="@color/color_grey"
+                            android:hint="Address" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:id="@+id/update_custDetails"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Save Changes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+

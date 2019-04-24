@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:background="@drawable/rectangleshape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mustardbrown">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Name:"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Email :"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Amount:"
+                            />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Payment Id:"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Quotation Id "
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Description :"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Status :"
+                            android:id="@+id/textView21" />
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Date/Time:"
+                            android:id="@+id/textView23" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Payment Mode :"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Balance Due:"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="Paid Amount :"
+                            />
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txt_H_Name"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:letterSpacing="0.05"
+                            android:text=""
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txt_H_Email"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:letterSpacing="0.05"
+                            android:text=""
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="2"
+                            android:id="@+id/txt_Q_amount"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:letterSpacing="0.05"
+                            android:text=""
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/txt_H_PaymentId"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:textColor="@color/color_grey"
+                            android:letterSpacing="0.05"
+                            android:text=""
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/txt_Q_Id"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:letterSpacing="0.05"
+                            android:text=""
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_H_Description"
+                            android:textColor="@color/color_grey"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_H_status"
+                            android:textColor="@color/color_grey"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:id="@+id/txt_H_Datetime"
+                            android:textColor="@color/color_grey"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_H_mode"
+                            android:textColor="@color/color_grey"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_H_balnceDue"
+                            android:textColor="@color/color_grey"/>
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/et_H_PaidAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/bottomline"
+                                android:textColor="@color/color_grey"
+                                android:hint="" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView >
+</LinearLayout>
+

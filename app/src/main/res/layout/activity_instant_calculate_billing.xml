@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="16dp"
+            android:background="@drawable/rectangleshape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mustardbrown">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="16dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text="Taxable Value:"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:id="@+id/txt_taxableValue_bill"
+                        android:textColor="@color/color_grey"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/linear_gst"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:letterSpacing="0.05"
+                        android:textSize="12dp"
+                        android:text="IGST"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4" />
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/igst_status"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:text="Yes"
+                            android:textSize="12dp"
+                            style="@style/RadioButton"
+                            android:textColor="@color/color_grey"
+
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/igst_statusyes" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:id="@+id/igst_statusno"
+                            style="@style/RadioButton"
+                            android:backgroundTint="@color/mustardbrown"
+                            android:textColor="@color/color_grey"
+                            android:text="No"
+                            android:checked="true"
+                            android:textSize="12dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/lt_igst"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="IGST :"
+                            android:textSize="12dp"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="IGST"
+                            android:textSize="12dp"
+                            android:id="@+id/txt_igst"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/ly_cgst"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textSize="12dp"
+                            android:text="CGST :"
+
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="CGST "
+                            android:textSize="12dp"
+                            android:id="@+id/txt_cgst"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/ly_sgst"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="SGST :"
+                            android:textSize="12dp"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="SGST "
+                            android:textSize="12dp"
+                            android:id="@+id/s_gst"
+                            android:textColor="@color/color_grey"
+
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/ly_totalgst"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="GST:"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:id="@+id/txt_view_gst"
+                        android:textColor="@color/color_grey"/>
+
+                </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/linear_shippingStatus"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text="Shipping Charges :"
+                        android:id="@+id/textView8" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:gravity="bottom"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_shipping_charge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/bottomline"
+                            android:textColor="@color/color_grey"
+                            android:hint="" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/linear_otherStatus"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text="Other Charges :"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:gravity="bottom"
+                        android:layout_gravity="bottom"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_otherCharge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/bottomline"
+                            android:textColor="@color/color_grey"
+                            android:hint=" " />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <View android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/mustardbrown">
+                    </View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary"
+                            android:letterSpacing="0.05"
+                            android:text="@string/TotalAmount"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/bill_totalAmount"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/color_grey"
+                            android:letterSpacing="0.05"
+                            android:text=""
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/green"
+                            android:letterSpacing="0.05"
+                            android:text="Amount Paid :"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:layout_marginLeft="50dp"
+                            android:gravity="bottom"
+                            android:layout_gravity="bottom"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/et_amountPaid"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberDecimal"
+                                android:background="@drawable/bottomline"
+                                android:textColor="@color/color_grey"
+                                android:hint=""/>
+                        </android.support.design.widget.TextInputLayout>
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:id="@+id/rb_bill_statusFull"
+                            android:textColor="@color/color_grey"
+                            android:text="Full"
+                            android:theme="@style/MyCheckBox"
+                            android:layout_height="wrap_content" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/red"
+                            android:letterSpacing="0.05"
+                            android:text="Balance Due :"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:gravity="bottom"
+                            android:layout_gravity="bottom"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/et_balanceDue"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/color_grey"
+                            android:letterSpacing="0.05"
+                            android:text=""
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:letterSpacing="0.05"
+                            android:textSize="12dp"
+                            android:text="Reverse Charges:"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content"/>
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:id="@+id/reverse_charges"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:layout_width="wrap_content"
+                                android:text="Yes"
+                                android:textSize="12dp"
+                                style="@style/RadioButton"
+                                android:textColor="@color/color_grey"
+
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/reverse_Charges_yes" />
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:layout_width="wrap_content"
+                                android:id="@+id/reverse_charges_no"
+                                style="@style/RadioButton"
+                                android:backgroundTint="@color/mustardbrown"
+                                android:textColor="@color/color_grey"
+                                android:text="No"
+                                android:checked="true"
+                                android:textSize="12dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/purchase_choosePayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Proceed to Pay"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
+
+    </LinearLayout>
+
+
+

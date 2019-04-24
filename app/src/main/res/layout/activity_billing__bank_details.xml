@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangleshape"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/BankName"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/_bankName"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:textColor="@color/color_grey"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:gravity="end"
+                    android:text="@string/Name"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/b_holderName"
+                    android:textColor="@color/color_grey"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/AccountNumber"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/b_AccountNumber"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_grey"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+
+                    android:text="@string/IfcNumber"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/b_ifcNumber"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/color_grey"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="3dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/Address"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/b_Address"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:textColor="@color/color_grey"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:letterSpacing="0.05"
+                    android:text="Bill Payment :"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/bank_bill_status"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="@string/Success"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/green"
+                        android:checked="true"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bill_addressYes" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/bill_addressNo"
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/red"
+                        android:text="@string/Pending"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/ShareBankDetails"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+                <include layout="@layout/view_line"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/emailSharing"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/gmail"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/whatsappSharing"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/whatsapp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/transaction_number"
+                    android:hint="@string/TransactionNumber"
+                    android:textColor="@color/color_grey"
+                    android:inputType="number"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorHint="@color/color_grey"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <include layout="@layout/view_line"></include>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_margin="20dp"
+                android:text="Save"
+                android:backgroundTint="@color/colorPrimary"
+                android:id="@+id/bt_bankDetail_proceed"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_purchase_billing_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.purchase_module.PurchaseBillingDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_grey"
+            android:letterSpacing="0.05"
+            android:text="Taxable Value"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/txt_view_taxableValue"
+            android:textColor="@color/color_grey"/>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:letterSpacing="0.05"
+                android:textSize="18dp"
+                android:text="IGST"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:id="@+id/igst_status"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:text="Yes"
+                    android:textSize="14dp"
+                    style="@style/RadioButton"
+                    android:textColor="@color/color_grey"
+
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/igst_statusyes" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/igst_statusno"
+                    style="@style/RadioButton"
+                    android:backgroundTint="@color/mustardbrown"
+                    android:textColor="@color/color_grey"
+                    android:text="No"
+                    android:checked="true"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/lt_igst"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:text="IGST :"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="IGST"
+                    android:id="@+id/txt_igst"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ly_cgst"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="CGST :"
+
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="CGST "
+                    android:id="@+id/txt_cgst"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ly_sgst"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="SGST :"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="SGST "
+                    android:id="@+id/s_gst"
+                    android:textColor="@color/color_grey"
+
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+         android:id="@+id/ly_totalgst"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_grey"
+            android:letterSpacing="0.05"
+            android:text="Gst"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/txt_view_gst"
+            android:textColor="@color/color_grey"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_grey"
+            android:letterSpacing="0.05"
+            android:text="Shipping "
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Shipping Charge "
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/et_shipping_charge"
+            android:textColor="@color/color_grey"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_grey"
+            android:letterSpacing="0.05"
+            android:text="Other charge"
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Other charge"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:id="@+id/et_otherCharge"
+            android:textColor="@color/color_grey"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/color_grey"
+                android:letterSpacing="0.05"
+                android:text="Total Amount  "
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                 android:id="@+id/totalAmount"
+                android:textColor="@color/color_grey"/>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_grey"
+            android:letterSpacing="0.05"
+            android:text="Amount Paid"
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="numberDecimal"
+            android:hint="Amount Paid"
+            android:id="@+id/et_amountPaid"
+            android:textColor="@color/color_grey"/>
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/color_grey"
+            android:letterSpacing="0.05"
+            android:text="Balance Due"
+            />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="Balance Due"
+            android:id="@+id/et_balanceDue"
+            android:textColor="@color/color_grey"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </View>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/purchase_saveTodb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Save"/>
+
+    </LinearLayout>
+</ScrollView>
+

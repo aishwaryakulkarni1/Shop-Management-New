@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_customer_week_analysis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.analysis.Customer_weekAnalysis">
+
+    <include layout="@layout/view_line"></include>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Date"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/Date"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangleshape"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/TotalAnalysis"
+                android:layout_gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/view_line"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/graph" />
+
+
+
+            </LinearLayout>
+
+
+            <include  layout="@layout/view_line">
+            </include>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/color_grey"
+                android:text="Analysis Summary"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView32" />
+
+            <include layout="@layout/view_line"></include>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Total"
+                android:layout_gravity="end"
+                android:layout_margin="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                 android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Sales :"
+
+                        android:textColor="@color/green"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Purchase :"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Expense :"
+                        android:textColor="@color/red"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:id="@+id/saleAmount"
+                            android:layout_width="wrap_content"
+                            android:text="Sale"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:gravity="end"
+                           android:layout_height="wrap_content">
+
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:text="₹"
+                               android:textColor="@color/color_grey"
+                               android:layout_height="wrap_content" />
+
+
+                           <TextView
+                               android:id="@+id/purchaseAmount"
+                               android:layout_width="wrap_content"
+                               android:text="Purchase"
+                               android:textColor="@color/color_grey"
+                               android:layout_height="wrap_content" />
+
+                       </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+
+
+
+                        <TextView
+                            android:id="@+id/expamount"
+
+                            android:layout_below="@+id/purchaseAmount"
+                            android:layout_width="wrap_content"
+                            android:text="Expense"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <include layout="@layout/view_line">
+
+            </include>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+</LinearLayout>

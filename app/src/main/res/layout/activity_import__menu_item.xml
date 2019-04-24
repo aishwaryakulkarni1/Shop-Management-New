@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.settings.Import_VendorList">
+
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="@string/DownloadSampleFilemenu"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:text="@string/Download"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/downloadFile"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_height="30dp" />
+
+        <include layout="@layout/view_line"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:text="@string/UploadVendor"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:text="@string/AddFile"
+                android:id="@+id/add_file"
+                android:layout_margin="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_height="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/FileName"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_fileName"
+                    android:layout_width="wrap_content"
+                    android:text="@string/FileName"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/dialogButtonCancel"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/color_grey"
+                    android:text="Cancel" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/bt_uploadfile"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:text="@string/UploadFile"
+                    android:textColor="@color/white"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

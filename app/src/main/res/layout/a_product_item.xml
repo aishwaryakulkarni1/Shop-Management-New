@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activity_add_purchase_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.inevitablesol.www.shopmanagement.purchase_module.AddPurchaseDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_height="match_parent">
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_userinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangleshape"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Select Product Type"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_height="wrap_content" />
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:layout_margin="5dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="wrap_content">
+
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/spnn_product_type"
+                                    android:overlapAnchor="true"
+                                    android:layout_height="wrap_content">
+
+                                </Spinner>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:paddingTop="16dp"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Select Product Type "
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_height="wrap_content" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:background="@color/colorPrimary"
+                                android:layout_margin="5dp"
+                                android:layout_height="wrap_content">
+
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/spnn_item_type"
+                                    android:overlapAnchor="true"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content">
+
+                                </Spinner>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_grey"
+                                android:letterSpacing="0.05"
+                                android:text="HSN /SAC :"
+                                />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:id="@+id/txt_view_hsn"
+                                android:textColor="@color/color_grey"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_grey"
+                                android:letterSpacing="0.05"
+                                android:text="@string/ITEMBARCODE"
+                                />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_grey"/>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_grey"
+                                android:letterSpacing="0.05"
+                                android:text="Product Company :"
+                                />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_grey"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/colorPrimary"
+                                android:letterSpacing="0.05"
+                                android:text="@string/MeasurementUnit"
+                                />
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:id="@+id/txt_view_company"
+                                android:textColor="@color/color_grey"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:background="@color/colorPrimary"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content">
+
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:overlapAnchor="true"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content">
+
+                            </Spinner>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_grey"
+                                android:letterSpacing="0.05"
+                                android:text="Quantity :"
+                                />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:hint="Quantity"
+                                    android:inputType="number"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:background="@drawable/bottomline"
+                                    android:id="@+id/et_qty"
+                                    android:textColor="@color/color_grey"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_gravity="center"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_grey"
+                                android:letterSpacing="0.05"
+                                android:text="Unit Price :"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="₹"
+                                android:textColor="@color/color_grey"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:inputType="numberDecimal"
+                                    android:hint="Unit price"
+                                    android:background="@drawable/bottomline"
+                                    android:id="@+id/et_unitPrice"
+                                    android:textColor="@color/color_grey"/>
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:textColor="@color/color_grey"
+                                android:letterSpacing="0.05"
+                                android:text="Discount:" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="₹"
+                                android:textColor="@color/color_grey"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:hint="Discount"
+                                    android:textSize="16dp"
+                                    android:background="@drawable/bottomline"
+                                    android:inputType="number"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/purchase_discount"
+                                    android:textColor="@color/color_grey"/>
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/color_grey"
+                                android:textSize="16sp"
+                                android:text="MRP"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView27" />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:id="@+id/check_mrp"
+                                android:textSize="16sp"
+                                android:theme="@style/MyCheckBox"
+                                android:textColor="@color/color_grey"
+                                android:text="Not Applicable"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/ly_mrp"
+                            android:visibility="visible"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:layout_gravity="center"
+                                android:textColor="@color/color_grey"
+                                android:letterSpacing="0.05"
+                                android:text="MRP :"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="₹"
+                                android:gravity="bottom"
+                                android:textColor="@color/color_grey"
+                                android:layout_height="wrap_content" />
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="wrap_content">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:hint="MRP"
+                                    android:background="@drawable/bottomline"
+                                    android:inputType="numberDecimal"
+                                    android:id="@+id/et_mrp"
+                                    android:textColor="@color/color_grey"/>
+                            </android.support.design.widget.TextInputLayout>
+                        </LinearLayout>
+
+
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:layout_gravity="center"
+                                android:textColor="@color/color_grey"
+                                android:letterSpacing="0.05"
+                                android:text="GST %"
+                                />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:background="@color/colorPrimary"
+                                android:layout_margin="5dp"
+                                android:layout_height="wrap_content">
+
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:id="@+id/et_gstpercentage"
+                                    android:overlapAnchor="true"
+                                    android:layout_gravity="center"
+                                    android:layout_height="wrap_content">
+
+                                </Spinner>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </View>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/purchase_addtoList"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@android:color/white"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Add To List"/>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="1dp"></View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_gravity="bottom"
+                        android:gravity="bottom"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:text="Item"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:text="Qty"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:text="Unit Price"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:text="Total"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="1dp"></View>
+
+
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/elist_selectedItem"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Total Qty:"
+                                android:textColor="@color/color_grey"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="Total Qty:"
+                                android:id="@+id/p_totalQty"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/color_grey"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="X Item"
+                            android:textColor="@color/white"
+                            android:id="@+id/purchase_deleteRow"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/red"
+                            android:layout_height="30dp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="1dp"></View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/purchase_next"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Next"/>
+                    </LinearLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp">
+
+    </View>
+
+
+</LinearLayout>
+

@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activity_add_purchase_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context="com.inevitablesol.www.shopmanagement.purchase_module.AddPurchaseDetails">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:background="@drawable/rectangleshape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+           android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:layout_width="0dp"
+                android:id="@+id/spnn_exp_product_type"
+                android:overlapAnchor="true"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:popupBackground="#d19400"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_plus"
+                android:id="@+id/add_exp"
+                android:background="@color/black"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/color_grey"
+                android:text="@string/Date"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/color_grey"
+                android:text="@string/Date"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_expDate" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="20dp"
+                android:id="@+id/date_expDate"
+                android:src="@drawable/ic_date_range"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp">
+
+        </View>
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_marginTop="15dp"
+             android:layout_marginRight="10dp"
+             android:layout_height="wrap_content">
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_marginLeft="20dp"
+                 android:layout_gravity="bottom"
+                 android:textColor="@color/color_grey"
+                 android:text="@string/ExpenseName"
+                 android:layout_height="wrap_content" />
+
+
+             <android.support.design.widget.TextInputLayout
+                 android:layout_width="match_parent"
+                 android:layout_marginLeft="20dp"
+                 android:layout_height="wrap_content">
+
+
+                 <android.support.design.widget.TextInputEditText
+                     android:id="@+id/et_exp_name"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:inputType="textCapWords"
+                     android:background="@drawable/bottomline"
+                     android:textColor="@color/color_grey"
+                     android:hint="" />
+             </android.support.design.widget.TextInputLayout>
+
+
+         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:text="Name"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/Qty"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Unit Price"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView17" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:text="Total"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/recyclerView_exp"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:text="Total Qty:"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/ext_total_qty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/color_grey"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:text="+ Row"
+
+                android:id="@+id/add_expqty"
+                android:textColor="@color/white"
+                android:background="@color/green"
+                android:layout_height="30dp" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:text=" X Row"
+                android:id="@+id/exp_deleterow"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:background="@color/red"
+                android:layout_height="30dp" />
+
+
+           </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                   android:layout_margin="10dp"
+                    android:text="Sub Total:"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView19" />
+
+
+                   <!--<LinearLayout-->
+                       <!--android:layout_width="wrap_content"-->
+                       <!--android:layout_height="wrap_content">-->
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:textAllCaps="false"
+                           android:layout_margin="10dp"
+                           android:text="@string/Total_GST"
+                           android:textColor="@color/color_grey"
+                           android:layout_height="wrap_content"
+                           android:id="@+id/textView18" />
+
+                       <!--<TextView-->
+                           <!--android:layout_width="wrap_content"-->
+                           <!--android:text="₹"-->
+                           <!--android:layout_gravity="center"-->
+                           <!--android:textColor="@color/color_grey"-->
+                           <!--android:layout_height="wrap_content" />-->
+
+                   <!--</LinearLayout>-->
+
+
+
+                  <!--<LinearLayout-->
+                      <!--android:layout_width="match_parent"-->
+                      <!--android:layout_height="wrap_content">-->
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:textAllCaps="false"
+
+                          android:text="@string/otherCharges"
+                          android:textColor="@color/color_grey"
+                          android:layout_height="wrap_content" />
+
+                      <!--<TextView-->
+                          <!--android:layout_width="wrap_content"-->
+                          <!--android:text="₹"-->
+                          <!--android:layout_gravity="bottom"-->
+                          <!--android:textColor="@color/color_grey"-->
+                          <!--android:layout_height="wrap_content" />-->
+
+
+
+
+
+
+                  <!--</LinearLayout>-->
+
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_marginTop="20dp"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_gravity="bottom"
+                         android:textColor="@color/color_grey"
+                         android:text="@string/TotalAmount"
+                         android:layout_height="wrap_content" />
+
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:text="₹"
+                         android:layout_gravity="bottom"
+                         android:textColor="@color/color_grey"
+                         android:layout_height="wrap_content" />
+
+
+                 </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exp_sub_total"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint=""
+                        android:id="@+id/exp_totalGst" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="100dp"
+                     android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exp_otherCharges"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/exp_totalAmount"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:text="@string/AmountPaid"
+                android:textColor="@color/green"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="₹"
+                android:layout_gravity="bottom"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/exp_amount_paid"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/color_grey"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:id="@+id/cb_fullexpenses"
+                android:textColor="@color/color_grey"
+                android:text="Full"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:theme="@style/MyCheckBox"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_marginRight="50dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:text="@string/Balance"
+                android:textColor="@color/red"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView38" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="₹"
+                android:layout_gravity="bottom"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:id="@+id/exp_balanceDue"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:enabled="false"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/color_grey"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp">
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Select Payment Type"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:layout_width="0dp"
+                android:id="@+id/spnn_type"
+                android:overlapAnchor="true"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_gravity="end"
+                    android:gravity="bottom"
+                    android:text="Ref No:"
+                    android:textColor="@color/color_grey"
+                    android:layout_weight="1"
+                    android:layout_height="0dp" />
+
+
+                <TextView
+                android:layout_width="wrap_content"
+                   android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                 android:textColor="@color/color_grey"
+                android:text="Description :"
+                android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/textView20" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="250dp"
+
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_exp_refNumber"
+                        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_exp_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/exp_addImages"
+                android:layout_width="wrap_content"
+                android:text="Add Document"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/exp_uploadImages"
+                android:layout_width="wrap_content"
+                android:text="Upload"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/FileName"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/fileName"
+                android:layout_marginLeft="10dp"
+                android:text="@string/FileName"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/exp_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center"
+             android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/save_Expenses"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Add Expense" />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp">
+
+    </View>
+
+</LinearLayout>

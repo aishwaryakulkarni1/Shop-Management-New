@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+     android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/From"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_fromdate"
+                android:layout_width="wrap_content"
+                android:text="@string/Date"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+                      </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/txt_hight_sellingDay"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_grey"
+                    android:textSize="19sp"
+                    android:text="@string/HightSalingDay"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/textView_purchaseDay"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/HightPurchaseDay"
+                    android:layout_height="wrap_content"
+                   />
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/txt_highestCustomerDay"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/CustomerDay"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"></include>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/txt_saleToCustomer"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/HighestSaletoCustDay"
+                    android:layout_height="wrap_content"
+                   />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/repetative_customer"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/RepetitiveDay"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView33" />
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/linear_productSale"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/SaleCatDay"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="19sp"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/TopSaleCatDay"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+

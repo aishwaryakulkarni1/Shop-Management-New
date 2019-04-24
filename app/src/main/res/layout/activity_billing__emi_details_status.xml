@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_billing_bank_details_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.billing_module.Billing_bankDetailsStatus">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="EMI Details"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/CompanyName"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/CompanyName"
+                android:id="@+id/company_name"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/RateOfInterest"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/RateOfInterest"
+                android:id="@+id/rateofIntrrest"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/TimeOfBound"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/TimeOfBound"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/timeofBound"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/policyNumber"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/policyNumber"
+                android:id="@+id/policy_number"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/PanCard"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/PanCard"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/pancard"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/PaymentStatus"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp">
+
+        </View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:text="Transaction No:"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <!--<android.support.design.widget.TextInputEditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_marginLeft="10dp"-->
+              <!---->
+                <!--android:textColor="@color/color_grey"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/emi_invId"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/color_grey"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<android.support.design.widget.TextInputEditText-->
+                    <!--android:id="@+id/et_transactionId_bankDetails"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:inputType="numberDecimal"-->
+                    <!--android:background="@drawable/bottomline"-->
+                    <!--android:textColor="@color/color_grey"-->
+                    <!--android:hint="" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:textColor="@color/white"
+                android:id="@+id/emi_detailsPaymentDone"
+                android:background="@color/colorPrimary"
+                android:text="Done"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

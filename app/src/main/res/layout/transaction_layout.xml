@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="4dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp">
+
+        <TextView
+            android:id="@+id/tv_invoiceID"
+            android:layout_width="wrap_content"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:text="Item name"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_Amount"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            />
+
+        <TextView
+            android:id="@+id/tv_AmountPaid"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_charges"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Charges"
+            />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Charges"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/mustardbrown"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Next">Next</string>
+    <string name="DayBook">Day Book</string>
+    <string name="AccountCreated">Account Created</string>
+    <string name="ITEMBARCODE">Item code/Barcode :</string>
+    <string name="Quantity">Quantity</string>
+</resources>

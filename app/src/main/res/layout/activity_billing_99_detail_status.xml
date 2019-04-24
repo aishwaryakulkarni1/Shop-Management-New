@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_billing_bank_details_status"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.billing_module.Billing_bankDetailsStatus">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:text="*99# Details"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Mobile Number"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Mobile Number"
+                android:layout_margin="10dp"
+                android:id="@+id/mobile_number"
+                android:textColor="@color/color_grey"
+                android:background="@color/black"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_margin="10dp"
+               android:text="VPA Address"
+               android:textColor="@color/color_grey"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:text="VPA DEATILS"
+               android:layout_margin="10dp"
+               android:id="@+id/mobile_VPA"
+               android:textColor="@color/color_grey"
+               android:background="@color/black"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Payment Status"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginLeft="10dp"
+                android:text="Transaction No:"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_transactionId_bankDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/color_grey"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="100dp"
+                android:textColor="@color/white"
+                android:id="@+id/bank_detailsPaymentDone99"
+                android:background="@color/colorPrimary"
+                android:text="Done"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

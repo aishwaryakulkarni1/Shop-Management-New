@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:layout_height="match_parent">
+
+
+    <View
+        android:layout_width="match_parent"
+         android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangleshape"
+                    android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/Taxable_Value"
+                        android:alpha="1"
+                        fontPath="OpenSans-BoldItalic.ttf"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/p_subtotal"
+                        android:text="@string/Taxable_Value"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/Total_GST"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="₹"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/Total_GST"
+                    android:id="@+id/p_gst_total"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/Shipping"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="₹"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="@string/Shipping"
+                    android:id="@+id/p_shipping_charge"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/Charges"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/Charges"
+                        android:id="@+id/p_other_charges"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="1dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/Total"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/Total"
+                        android:id="@+id/p_total"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/AmountPaid"
+                        android:textColor="#76FF03"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/AmountPaid"
+                        android:id="@+id/p_amountpaid"
+                        android:textColor="#76FF03"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/Balance"
+                        android:textColor="@color/pink"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:text="@string/Balance"
+                        android:id="@+id/p_balance"
+                        android:textColor="@color/pink"
+                        android:layout_height="wrap_content" />
+
+
+                     <android.support.v7.widget.AppCompatButton
+                         android:layout_width="wrap_content"
+                         android:text="Pay Remaining"
+                         android:id="@+id/pay_remaining"
+                         android:textAllCaps="false"
+
+                         android:textColor="@color/white"
+                         android:background="@color/colorPrimary"
+                         android:layout_height="30dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/Reverse_charges"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:id="@+id/p_reversecharge"
+                        android:text="@string/Reverse_charges"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                    </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:background="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="Please Select File Format"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:textColor="@color/color_grey"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                     android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:textColor="@color/colorPrimary"
+                         android:layout_gravity="center"
+                         android:gravity="center"
+                         android:text="@string/PurchaseMessage"
+                         android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="30dp">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:text="@string/Download"
+                        android:textColor="@color/white"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>

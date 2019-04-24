@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_billing__cheque_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.billing_module.Billing_ChequeDetails">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:hint="@string/CompanyName"
+                android:textColor="@color/color_grey"
+                android:inputType="textCapWords"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:layout_height="wrap_content"
+                android:id="@+id/emi_companyName" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:hint="@string/RateOfInterest"
+                android:textColor="@color/color_grey"
+                android:inputType="number"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:id="@+id/emi_rateofInterest"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/emi_timeofBound"
+                android:hint="@string/TimeOfBound"
+                android:textColor="@color/color_grey"
+                android:inputType="number"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/emi_policyNumber"
+                android:hint="@string/policyNumber"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:textColor="@color/color_grey"
+                android:inputType="textCapWords"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:maxLength="10"
+                android:hint="Pan Card no "
+                android:id="@+id/emi_pancard"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:textColor="@color/color_grey"
+                android:inputType="textCapWords"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/Date"
+                android:textSize="20dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/color_grey"
+                android:text="@string/Date"
+                android:textSize="18dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_emiDate" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/date_EmiDate"
+                android:src="@drawable/ic_date_range"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/transaction_number"
+                android:hint="@string/TransactionNumber"
+                android:textColor="@color/color_grey"
+                android:inputType="number"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></View>
+
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:id="@+id/bt_EmiDetail_proceed"-->
+        <!--android:src="@drawable/proceed"-->
+        <!--android:layout_height="wrap_content" />-->
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:id="@+id/bt_EmiDetail_proceed"
+            android:layout_margin="10dp"
+            android:text="@string/ProceedToPay"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

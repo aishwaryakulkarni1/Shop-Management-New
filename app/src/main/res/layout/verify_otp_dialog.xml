@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangleshape"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/color_grey"
+        android:text="Verify OTP"
+        android:textSize="24sp" />
+
+    <include layout="@layout/view_line"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:text="A message with a OTP is on its way \n Just stay put"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+
+    <!-- OTP Label -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+        <android.support.v7.widget.AppCompatEditText android:id="@+id/input_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:textColorHint="@color/color_grey"
+              android:background="@drawable/bottomline"
+            android:inputType="phone"
+            android:hint=" Enter OTP received here "/>
+    </android.support.design.widget.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="end"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/cancel_btn"
+            android:layout_marginLeft="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            android:padding="12dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Verify"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

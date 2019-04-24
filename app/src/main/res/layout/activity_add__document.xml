@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="wrap_content">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mustardbrown">
+
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="@string/Document"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:id="@+id/no_of_doc"
+                android:overlapAnchor="true"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+
+           <ImageView
+               android:layout_width="150dp"
+               android:id="@+id/imageview"
+                android:background="@color/color_grey"
+               android:layout_marginTop="10dp"
+               android:layout_gravity="center"
+               android:layout_height="150dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="5dp"
+                   android:textColor="@color/colorPrimary"
+                   android:text="@string/ADDPHOTO"
+                   android:layout_height="wrap_content" />
+
+        <include layout="@layout/view_line"></include>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/total_Sale"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/pdf"
+                    android:text=".pdf"
+                    style="@style/RadioButton"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/xls"
+                    android:text=".xls"
+                    android:checked="true"
+                    style="@style/RadioButton"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Select File"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_marginLeft="10dp"
+                android:id="@+id/browseFile"
+                android:layout_width="wrap_content"
+                android:text="@string/Browse"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/imageName"
+                android:layout_marginLeft="10dp"
+                android:text="File Format. file"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="@string/UploadFile"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:layout_height="30dp" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_height="30dp">
+
+            <android.support.v7.widget.AppCompatButton
+
+                android:layout_width="wrap_content"
+                android:text="@string/SaveDocument"
+                android:textAllCaps="false"
+                android:id="@+id/save_doc"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+

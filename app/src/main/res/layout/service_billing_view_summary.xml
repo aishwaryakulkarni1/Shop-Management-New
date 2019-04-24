@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="@color/black"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/activity_add_purchase_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/black"
+        tools:context="com.inevitablesol.www.shopmanagement.purchase_module.AddPurchaseDetails">
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:background="@drawable/rectangleshape"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/CustomerDetails"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/view_line"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/CustomerName"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/Mobile"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/EMAIL"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/exp_Type"
+                        android:text="Expensive Type"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Date"
+                        android:id="@+id/exp_date"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/exp_name"
+                        android:text="Expensive Name"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"></include>
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="@string/Services"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/view_line"></include>
+
+
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/ServicesName"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/FromDate"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/ToDate"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/Amount"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/recyclerView_exp"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAllCaps="false"
+                        android:layout_margin="10dp"
+                        android:text="Sub Total:"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView19" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textAllCaps="false"
+                        android:layout_margin="10dp"
+                        android:text="@string/otherCharges"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/color_grey"
+                        android:text="@string/TotalAmount"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/exp_sub_total"
+                            android:enabled="false"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/bottomline"
+                            android:textColor="@color/color_grey"
+                            android:hint="" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/bottomline"
+                            android:textColor="@color/color_grey"
+                            android:hint=""
+                            android:id="@+id/exp_totalGst" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="100dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/exp_otherCharges"
+                            android:inputType="numberDecimal"
+                            android:background="@drawable/bottomline"
+                            android:textColor="@color/color_grey"
+                            android:hint="" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="1dp"></View>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_gravity="bottom"
+                    android:text="@string/AmountPaid"
+                    android:textColor="@color/green"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:id="@+id/exp_amount_paid"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_marginRight="50dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_gravity="bottom"
+                    android:text="@string/Balance"
+                    android:textColor="@color/red"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/exp_balanceDue"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:enabled="false"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp">
+
+            </View>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/save_Expenses"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/ProceedToBilling" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp">
+
+    </View>
+
+</LinearLayout>

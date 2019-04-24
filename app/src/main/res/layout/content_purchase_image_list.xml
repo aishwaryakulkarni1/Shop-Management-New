@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mustardbrown">
+
+        </View>
+
+
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/ImageName"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/DocType"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+        <include layout="@layout/view_line"></include>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <include layout="@layout/stockview_recyclerview" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"
+            android:id="@+id/view2">
+
+        </View>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

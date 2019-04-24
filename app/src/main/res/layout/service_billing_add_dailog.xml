@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_line"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rectangleshape"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:text="@string/AddService"
+              android:textColor="@color/white"
+               android:gravity="center"
+              android:textSize="18sp"
+              android:layout_height="wrap_content" />
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content">
+
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:id="@+id/billing_supplier"
+                    android:overlapAnchor="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+                </Spinner>
+
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="10dp"
+                    android:text="@string/ServicesName"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/SACCODE"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/Descriptions"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/TypeOfService"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView37" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/DurationSpan"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/DueReminderDate"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/Amount"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/DiscountInRs"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/GST"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/TotalAmount"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/Amount"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/DiscountInRs"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/GST"
+                android:gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/TotalAmount"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                 android:text="@string/FromDate"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/ToDate"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:text="@string/ServiceAmount"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView19" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAllCaps="false"
+                    android:layout_margin="10dp"
+                    android:text="@string/DiscountInRs"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/DiscountinPercentage"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exp_sub_total"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint=""
+                        android:id="@+id/exp_totalGst" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exp_otherCharges"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_grey"
+                    android:layout_margin="10dp"
+                    android:text="@string/DiscountedAmount"
+                    android:layout_height="wrap_content" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:text="@string/GST"
+                     android:layout_gravity="end"
+                     android:layout_margin="10dp"
+                     android:textColor="@color/color_grey"
+                     android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content">
+
+
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:overlapAnchor="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <include layout="@layout/view_line"></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/Total_Amount"
+                android:textColor="@color/green"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/bottomline"
+                    android:textColor="@color/color_grey"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:text="@string/AddToCart"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="end"
+            android:layout_height="30dp" />
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

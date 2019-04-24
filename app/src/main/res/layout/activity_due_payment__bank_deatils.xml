@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+    </View>
+
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_make_bill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.inevitablesol.www.shopmanagement.MakeBillActivity">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:background="@color/colorPrimary"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:typeface="serif"
+                            android:layout_marginLeft="5dp"
+                            android:text="Billing to"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:id="@+id/txt_BcustName"
+                                android:typeface="serif"
+                                android:text=""
+                                android:layout_height="wrap_content"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:text="@string/Total"
+                                android:textColor="@color/white"
+                                android:layout_height="wrap_content" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textSize="20sp"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/white"
+                                android:id="@+id/txt_custTotal"
+                                android:text=""
+                                android:layout_height="wrap_content"
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/rectangleshape"
+                    android:layout_marginLeft="16dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:background="@color/black"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_marginLeft="16dp"
+                                android:paddingTop="10dp"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/color_grey"
+                                android:text="How would you like to pay?"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/mustardbrown">
+
+                            </View>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:id="@+id/ly_cashPayment"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/billing_cashpayment"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/imageView3" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:text="@string/CashPayment"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <include layout="@layout/view_line"></include>
+
+                            <LinearLayout
+                                android:id="@+id/ly_razorpay"
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/billing_razorpay"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/white"
+                                        android:text="@string/Debit_Card_payment"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:text="@string/poweredByRazorpay"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <include layout="@layout/view_line"></include>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:id="@+id/ly_payBiz"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/billing_pay_card"
+                                    android:layout_height="wrap_content" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_margin="10dp"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:textColor="@color/white"
+                                        android:text="@string/Debit_Card_Razorpay"
+                                        android:layout_height="wrap_content" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:textColor="@color/colorPrimary"
+                                        android:text="@string/poweredByPayU"
+                                        android:layout_height="wrap_content" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                            <include layout="@layout/view_line"></include>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:id="@+id/ly_paytm"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/billing_paytm"
+                                    android:layout_height="wrap_content" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:text="@string/paytm"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <include layout="@layout/view_line"></include>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:id="@+id/ly_bhim"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/billing_bhim"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:text="@string/bhim"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView41" />
+
+                            </LinearLayout>
+                            <include layout="@layout/view_line"></include>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:id="@+id/ly_sendLink"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/send_payment_link"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:text="@string/sendPaymentLink"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <include layout="@layout/view_line"></include>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:id="@+id/ly_bank_details"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/billling_bank_details"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:text="@string/ToBankAccount"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                            <include layout="@layout/view_line"></include>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:id="@+id/ly_cheque"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/billing_cheque"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:text="@string/ChequePayment"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+                            <include layout="@layout/view_line"></include>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_margin="10dp"
+                                android:id="@+id/ly_emi"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:src="@drawable/billing_emi"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:layout_gravity="center"
+                                    android:textColor="@color/white"
+                                    android:text="@string/EMI"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                            <include layout="@layout/view_line"></include>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</LinearLayout>

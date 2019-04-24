@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_billing_notifications"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.settings.Billing_notifications">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Enable Payment Reminder"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_paymentARemainder"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rb_payment_reminder_yes" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/rb_payment_reminder_no"
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Due Payment"
+                android:gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="16dp"
+                android:id="@+id/linear_paymentReminder"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Select day for Reminder"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView24" />
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_pay_dueDays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="Number Of Days" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="Reminder Setting"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/color_grey"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="2.01"-->
+                    <!--android:letterSpacing="0.05"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="Enable Notification"-->
+                    <!--android:textColor="@color/color_grey"-->
+                    <!--android:layout_height="wrap_content"-->
+                     <!--/>-->
+
+                <!--<RadioGroup-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<android.support.v7.widget.AppCompatRadioButton-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="Yes"-->
+                        <!--android:textSize="14dp"-->
+                        <!--style="@style/RadioButton"-->
+                        <!--android:textColor="@color/color_grey"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--/>-->
+
+                    <!--<android.support.v7.widget.AppCompatRadioButton-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--style="@style/RadioButton"-->
+                        <!--android:backgroundTint="@color/mustardbrown"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:text="No"-->
+                        <!--android:checked="true"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</RadioGroup>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="2.01"-->
+                    <!--android:letterSpacing="0.05"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="SMS Notification"-->
+                    <!--android:textColor="@color/color_grey"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+                <!--<RadioGroup-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<android.support.v7.widget.AppCompatRadioButton-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="Yes"-->
+                        <!--android:textSize="14dp"-->
+                        <!--style="@style/RadioButton"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--/>-->
+
+                    <!--<android.support.v7.widget.AppCompatRadioButton-->
+                        <!--android:layout_width="wrap_content"-->
+
+                        <!--style="@style/RadioButton"-->
+                        <!--android:backgroundTint="@color/mustardbrown"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:text="No"-->
+                        <!--android:checked="true"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</RadioGroup>-->
+
+
+            <!--</LinearLayout>-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="2.01"-->
+                    <!--android:letterSpacing="0.05"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="Mail  Notification"-->
+                    <!--android:textColor="@color/color_grey"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--/>-->
+
+                <!--<RadioGroup-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<android.support.v7.widget.AppCompatRadioButton-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="Yes"-->
+                        <!--android:textSize="14dp"-->
+                        <!--style="@style/RadioButton"-->
+                        <!--android:textColor="@color/color_grey"-->
+
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--/>-->
+
+                    <!--<android.support.v7.widget.AppCompatRadioButton-->
+                        <!--android:layout_width="wrap_content"-->
+
+                        <!--style="@style/RadioButton"-->
+                        <!--android:backgroundTint="@color/mustardbrown"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:text="No"-->
+                        <!--android:checked="true"-->
+                        <!--android:textSize="14dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</RadioGroup>-->
+
+
+            <!--</LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+
+                  android:orientation="vertical"
+                  android:layout_height="wrap_content">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_gravity="center"
+                       android:textColor="@color/colorPrimary"
+                       android:text="Details For Sending Notifications"
+                       android:layout_height="wrap_content" />
+
+                  <include layout="@layout/view_line"></include>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:text="@string/Mobile"
+                          android:layout_marginLeft="10dp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_height="wrap_content" />
+                          <android.support.design.widget.TextInputEditText
+                              android:id="@+id/mobilenumber"
+                              android:layout_width="match_parent"
+                              android:hint="Mobile Number "
+                              android:inputType="phone"
+                              android:maxLength="10"
+                              android:textColor="@color/color_grey"
+                              android:backgroundTint="@color/colorPrimary"
+                              android:textColorHint="@color/color_grey"
+                              android:layout_height="wrap_content" />
+
+
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:text="@string/EMAIL"
+                          android:layout_marginLeft="10dp"
+                          android:textColor="@color/colorPrimary"
+                          android:layout_height="wrap_content" />
+                      <android.support.design.widget.TextInputEditText
+                          android:id="@+id/email"
+                          android:layout_width="match_parent"
+                          android:hint="Email"
+                          android:inputType="textEmailAddress"
+                          android:textColor="@color/color_grey"
+                          android:backgroundTint="@color/colorPrimary"
+                          android:textColorHint="@color/color_grey"
+                          android:layout_height="wrap_content" />
+
+
+                  </LinearLayout>
+
+                  <android.support.v7.widget.AppCompatButton
+                      android:layout_margin="10dp"
+                      android:id="@+id/save_details"
+                      android:layout_width="wrap_content"
+                      android:layout_gravity="center"
+                      android:background="@color/colorPrimary"
+                      android:text="Save"
+                      android:layout_height="30dp" />
+
+
+
+
+              </LinearLayout>
+            <include layout="@layout/view_line"></include>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text=" Wish List Reminder Setting"
+                android:gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Enable Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                     android:id="@+id/rg_wish_noti"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:id="@+id/rb_wish_noti_yes"
+                        android:textColor="@color/color_grey"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        style="@style/RadioButton"
+                        android:id="@+id/rb_wish_noti_no"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="SMS Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_wish_noti_sms"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        android:id="@+id/rb_wish_sms_yes"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:id="@+id/rb_wish_sms_no"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Mail  Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_wish_mail"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        android:id="@+id/rb_wish_mail_yes"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:id="@+id/rb_wish_mail_no"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text=" Make Bill  Reminder Setting"
+                android:gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Enable Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_makeBillreminder"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        android:id="@+id/rb_makebill_yes_notification"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/rb_makebill_no_notification"
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="SMS Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_makeBill_sms"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:id="@+id/rb_makebill_sms_yes"
+                        android:textColor="@color/color_grey"
+
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        style="@style/RadioButton"
+                        android:id="@+id/rb_makebill_sms_no"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Mail  Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_makeBill_mail"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+                         android:id="@+id/rb_makebill_mail_yes"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/rb_makebill_mail_no"
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text=" Purchase Option  Reminder Setting"
+                android:gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Enable Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_purchase_noti"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+                         android:id="@+id/rb_purchase_noti_yes"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/rb_purchase_noti_no"
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="SMS Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_purchase_sms"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:id="@+id/rb_purchase_sms_yes"
+                        android:textColor="@color/color_grey"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/rb_purchase_sms_no"
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Mail  Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:id="@+id/rg_purchase_mail"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+                         android:id="@+id/rb_purchase_mail_yes"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        style="@style/RadioButton"
+                        android:id="@+id/rb_purchase_mail_no"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text=" Stock Storage  Reminder Setting"
+                android:gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Enable Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="SMS Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2.01"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:layout_gravity="center"
+                    android:text="Mail  Notification"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:checked="true"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+
+
+
+
+        </LinearLayout>
+
+        </ScrollView>
+
+
+
+</LinearLayout>

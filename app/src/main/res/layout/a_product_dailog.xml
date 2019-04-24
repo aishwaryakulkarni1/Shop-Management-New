@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/rectangleshape"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:text="@string/ItemDetails"
+           android:layout_gravity="center"
+           android:textColor="@color/white"
+           android:layout_height="wrap_content" />
+
+    <include layout="@layout/view_line">
+    </include>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+         android:text="@string/ItemName"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/Item_Name"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content" />
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/Unit_Price"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/Item_Name"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/MeasurementUnit"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/Item_Name"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/Quantity"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/q_plus"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="wrap_content"
+
+                android:id="@+id/txt_calValues"
+                android:hint="0"
+                android:ems="2"
+                android:inputType="numberSigned"
+                android:maxLength="3"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/subValuesForBilling"
+                android:background="@drawable/q_minus"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/ChangeUnit"
+             android:padding="5dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_marginLeft="5dp"
+                  android:background="@color/colorPrimary"
+                  android:layout_height="wrap_content">
+
+                  <Spinner
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                  </Spinner>
+
+              </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_line"></include>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_marginTop="10dp"
+          android:gravity="center"
+          android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:text="@string/Price"
+               android:textColor="@color/green"
+               android:layout_height="wrap_content" />
+
+                 <EditText
+                     android:layout_width="wrap_content"
+                     android:ems="5"
+                     android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+         <include layout="@layout/cancel_button"></include>
+          <android.support.v7.widget.AppCompatButton
+              android:layout_width="wrap_content"
+              android:text="@string/AddToCart"
+              android:textAllCaps="false"
+              style="@style/ButtonBorderless"
+              android:layout_margin="5dp"
+              android:textColor="@color/white"
+              android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

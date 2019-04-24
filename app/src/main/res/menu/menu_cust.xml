@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/imp_customer"
+        
+        android:title="@string/ImportCust"
+        />
+
+    <item android:id="@+id/exp_customer"
+        android:title="@string/ExportCust"
+        />
+
+</menu>

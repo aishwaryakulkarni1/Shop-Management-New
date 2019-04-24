@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_printer_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.settings.PrinterSetting">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:text="Select Printer  Type"
+        android:textColor="@color/color_grey"
+        android:textSize="18sp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:checked="true"
+                style="@style/RadioButton"
+                android:backgroundTint="@color/mustardbrown"
+                android:textColor="@color/color_grey"
+                android:text="Thermal Bluetooth Printer"
+                android:textSize="14dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:text="Regular A4 Printer"
+                android:textSize="14dp"
+                style="@style/RadioButton"
+                android:textColor="@color/color_grey"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    </LinearLayout>

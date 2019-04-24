@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/colorPrimary"
+        android:textSize="21sp"
+        android:gravity="center"
+         android:text="@string/AccountCreated"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/view_line"></include>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/signup_message"
+            android:layout_height="wrap_content" />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_marginTop="20dp"
+              android:gravity="center"
+               android:text="@string/thanksfor_singup"
+              android:textColor="@color/green"
+              android:layout_height="wrap_content" />
+
+              <View
+                  android:layout_width="match_parent"
+                  android:background="@color/colorPrimary"
+                  android:layout_height="1dp"></View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/welcome"
+            android:textColor="@color/blue"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangleshape"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bt_signupSuccessfully"
+                style="@style/ButtonBorderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="@string/jumptopage"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/formoreQuariy"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ly_calltoCustomer"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="@string/phoneNumber"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+    </LinearLayout>

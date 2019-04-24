@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+<include layout="@layout/view_line">
+
+</include>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/shape_search"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <EditText android:id="@+id/input_searchCustomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:drawableRight="@drawable/search"
+                        android:hint="Customer Name" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/add_newcustomer"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_plus"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp">
+
+            <EditText android:id="@+id/input_billcustName"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:inputType="textCapSentences"
+                android:textColorHint="@color/color_grey"
+                android:background="@drawable/bottomline"
+                android:textColor="@color/color_grey"
+                android:hint="Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <EditText android:id="@+id/input_bill_MobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColorHint="@color/color_grey"
+                android:maxLength="10"
+                android:background="@drawable/bottomline"
+                android:textSize="14dp"
+                android:textColor="@color/color_grey"
+                android:hint="Mobile Number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <EditText android:id="@+id/input_billMailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/color_grey"
+                android:inputType="textEmailAddress"
+                android:textSize="14dp"
+                android:background="@drawable/bottomline"
+                android:textColor="@color/color_grey"
+                android:hint="Mail ID" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_bill_gst"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColorHint="@color/color_grey"
+                android:inputType="textCapCharacters"
+                android:maxLength="15"
+                android:textSize="14dp"
+                android:background="@drawable/bottomline"
+                android:textColor="@color/color_grey"
+                android:hint="GSTIN  e.g 22 AAAAA0000A 1Z5" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="bottom"
+                android:text="Place of Supply:"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content">
+
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:id="@+id/billing_supplier"
+                    android:overlapAnchor="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+                </Spinner>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/linear_hommeStatus"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:letterSpacing="0.05"
+                    android:textSize="14dp"
+                    android:text="Home delivery"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView4" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:id="@+id/home_delivery_button"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:text="Yes"
+                        android:textSize="14dp"
+                        style="@style/RadioButton"
+                        android:textColor="@color/color_grey"
+                        android:checked="true"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bill_addressYes" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/bill_addressNo"
+                        style="@style/RadioButton"
+                        android:backgroundTint="@color/mustardbrown"
+                        android:textColor="@color/color_grey"
+                        android:text="No"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content" />
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/linear_address"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText android:id="@+id/input_billAddress_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapSentences"
+                        android:textSize="14dp"
+                        android:textColorHint="@color/color_grey"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey"
+                        android:hint="Address" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText android:id="@+id/input_billAddtwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <EditText android:id="@+id/input_billaddThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:background="@drawable/bottomline"
+                        android:textColor="@color/color_grey" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+                <android.support.v7.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:textSize="16sp"
+                    android:id="@+id/proceedtobilling"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:text="@string/ProceedToBilling"
+                    android:background="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <!--<ListView-->
+            <!--android:id="@+id/list_customerInfo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="visible"-->
+            <!--android:layout_marginTop="70dp"-->
+            <!--android:nestedScrollingEnabled="true"-->
+            <!--android:fastScrollAlwaysVisible="true"-->
+            <!--android:background="@drawable/shape_search" >-->
+
+        <!--</ListView>-->
+
+
+    </FrameLayout>
+</LinearLayout>

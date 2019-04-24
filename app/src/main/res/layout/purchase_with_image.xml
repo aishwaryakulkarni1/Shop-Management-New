@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/rectangleshape"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/InvoiceNumber"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:alpha="1"
+                android:layout_marginLeft="5dp"
+                fontPath="OpenSans-Bold.ttf"
+                android:id="@+id/p_view_invoiceNumber"
+                android:textColor="@color/color_grey"
+                android:text="@string/ShopName"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Invoice Date :"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/p_view_invoiceDate"
+                android:textColor="@color/color_grey"
+                android:text="@string/ShopName"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="@string/ShopName"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/p_view_shopName"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/ShopName"
+                    android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/ContactPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_grey"
+                android:id="@+id/p_view_contact_person"
+                android:text="@string/ContactPersonName"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/Contact"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/p_v_mobileNumber"
+                android:textColor="@color/color_grey"
+                android:text="@string/Contact"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/Address"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/p_v_address"
+                android:textColor="@color/color_grey"
+                android:text="@string/Address"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/State_Code"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:id="@+id/p_v_statusCode"
+                android:layout_marginLeft="5dp"
+                android:text="@string/placeOfSuppler"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/State"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:id="@+id/p_v_state"
+                android:layout_marginLeft="5dp"
+                android:text="@string/placeOfSuppler"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="GST Registered :"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/p_v_gstStatus"
+                android:text="@string/GST_STATUS"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/GST_IN"
+                android:gravity="end"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:id="@+id/p_v_gstIn"
+                android:text="@string/GST_IN"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/EMAIL"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/p_v_email_id"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp">
+
+        </View>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="@string/Item_Name"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/Qty"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Unit_Price"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:gravity="end"
+                android:text="@string/Discount"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:scrollbars="vertical"
+                android:id="@+id/purchase_vendor_item"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/p_v_next"
+                android:text="@string/Next"
+                android:layout_height="30dp" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:id="@+id/p_v_Image"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="View Images"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

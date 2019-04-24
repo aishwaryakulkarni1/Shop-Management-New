@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/black">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mustardbrown">
+
+            </View>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="30dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_userinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/rectangleshape"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Product type Label -->
+
+
+
+                    <!-- Brand name Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp">
+
+
+                        <EditText android:id="@+id/update_v_shopname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:background="@drawable/bottomline"
+                            android:inputType="textCapCharacters"
+                            android:hint="Shop Name"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+
+
+                    <!-- Brand name Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp">
+
+
+                        <EditText android:id="@+id/update_v_OwnerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:background="@drawable/bottomline"
+                            android:inputType="textCapCharacters"
+                            android:hint="Owner Name"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <!-- Brand name Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp">
+
+
+                        <EditText android:id="@+id/update_v_contactpersonName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:background="@drawable/bottomline"
+                            android:inputType="textCapCharacters"
+                            android:hint="Contact Person"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <!-- Brand name Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp">
+
+
+                        <EditText android:id="@+id/update_v_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:background="@drawable/bottomline"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:hint="Mobile"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp">
+
+
+                        <EditText android:id="@+id/update_v_Email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:background="@drawable/bottomline"
+                            android:inputType="textEmailAddress"
+                            android:hint="Email (optional)"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="8dp">
+
+                        <EditText android:id="@+id/update_v_Address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapWords"
+                            android:background="@drawable/bottomline"
+                            android:textColor="@color/color_grey"
+                            android:hint="Address" />
+                    </android.support.design.widget.TextInputLayout>
+                    <!-- Item MRP Label -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:letterSpacing="0.05"
+                            android:textSize="14dp"
+
+                            android:text="GST Register"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView4" />
+
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:id="@+id/gst_details"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:layout_width="wrap_content"
+                                android:text="Yes"
+                                android:textSize="14dp"
+                                style="@style/RadioButton"
+                                android:textColor="@color/color_grey"
+                                android:checked="true"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/gst_yes"/>
+
+                            <android.support.v7.widget.AppCompatRadioButton
+                                android:layout_width="wrap_content"
+                                android:id="@+id/gst_no"
+                                style="@style/RadioButton"
+                                android:backgroundTint="@color/mustardbrown"
+                                android:textColor="@color/color_grey"
+                                android:text="No"
+                                android:textSize="14dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:id="@+id/linear_update"
+                         android:layout_height="wrap_content">
+
+
+                    <!-- Original prize Label -->
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp">
+
+                        <EditText android:id="@+id/update_v_gstNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="textCapCharacters"
+                            android:background="@drawable/bottomline"
+                            android:textColor="@color/color_grey"
+                            android:maxLength="15"
+                            android:hint="GSTIN e.g 22 AAAAA0000A 1Z5" />
+                    </android.support.design.widget.TextInputLayout>
+
+                     </LinearLayout>
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_marginTop="20dp"-->
+                        <!--android:layout_height="wrap_content">-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstone"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="numberSigned"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gsttwo"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="number"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstthree"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="textCapCharacters"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstfour"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="textCapCharacters"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstfive"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="textCapCharacters"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                        <!--&lt;!&ndash;<android.support.design.widget.TextInputLayout&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                            <!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+                            <!--&lt;!&ndash;<EditText android:id="@+id/update_v_gstsix"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_width="20dp"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:inputType="textCapCharacters"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:background="@drawable/bottomline"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:textColor="@color/color_grey"&ndash;&gt;-->
+                                <!--&lt;!&ndash;android:maxLength="15"/>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</android.support.design.widget.TextInputLayout>&ndash;&gt;-->
+
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstseven"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="textCapCharacters"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gsteight"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="number"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstnine"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="number"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstten"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="number"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_eleven"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="number"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstt"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="textCapCharacters"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gstth"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="number"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gsttfthn"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="textCapCharacters"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+                        <!--<android.support.design.widget.TextInputLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content">-->
+
+                            <!--<EditText android:id="@+id/update_v_gsttfv"-->
+                                <!--android:layout_width="20dp"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:inputType="textCapCharacters"-->
+                                <!--android:background="@drawable/bottomline"-->
+                                <!--android:textColor="@color/color_grey"-->
+                                <!--android:maxLength="15"/>-->
+                        <!--</android.support.design.widget.TextInputLayout>-->
+
+
+
+
+
+                    <!--</LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_margin="10dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_height="wrap_content">
+
+
+                        <Spinner
+                            android:layout_width="0dp"
+                            android:id="@+id/spnn_placeofSuppiler"
+                            android:overlapAnchor="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="2"
+                            android:layout_height="wrap_content">
+                        </Spinner>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:id="@+id/update_vendorDetails"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:text="Save Changes"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+</LinearLayout>

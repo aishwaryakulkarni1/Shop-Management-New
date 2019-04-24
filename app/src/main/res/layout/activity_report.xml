@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_report"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.report.Report_Activity">
+
+
+    <include layout="@layout/view_line">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/daybook"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_dayBook" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/discount"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_discount" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/profit_loss"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_profit_loss" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/r_sale_roprts"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_sale" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/r_purchase"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/r_purchase" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/r_expense"
+                android:id="@+id/r_expense"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/r_tax"
+                android:id="@+id/r_tax"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/r_rate"
+                android:id="@+id/r_rate"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/r_gst"
+                android:id="@+id/r_gst"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

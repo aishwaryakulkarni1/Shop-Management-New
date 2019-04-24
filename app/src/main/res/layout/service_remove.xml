@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="@color/black"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rectangleshape"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="10dp"
+                    android:text="@string/ServicesName"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/SACCODE"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/Descriptions"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/TypeOfService"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/DurationSpan"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/DueReminderDate"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+            </LinearLayout>
+            <include layout="@layout/view_line"></include>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/Amount"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/DiscountInRs"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/GST"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/TotalAmount"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/Amount"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/DiscountInRs"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/GST"
+                android:gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/TotalAmount"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+
+          <android.support.v7.widget.AppCompatButton
+              android:layout_width="wrap_content"
+              android:layout_margin="10dp"
+               android:text="Remove"
+              android:textColor="@color/white"
+              android:background="@color/colorPrimary"
+               android:layout_gravity="end"
+              android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

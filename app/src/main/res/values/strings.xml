@@ -1,0 +1,542 @@
+<resources>
+    <string name="app_name">M-Hourz</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close  navigation drawer</string>
+    <string name="title_activity_billing_info">BillingInfo</string>
+    <string name="ShopName">Shop /Company  Details:</string>
+    <string name="ContactPersonName">Contact person  :</string>
+    <string name="Contact">Mobile Number :</string>
+    <string name="EMAIL">Email ID:</string>
+    <string name="Address">Address :</string>
+    <string name="State_Code">State Code :</string>
+    <string name="GST_IN">GSTIN:</string>
+    <string name="GST_STATUS">GST Status :</string>
+    <string name="Item_Name">Item Name</string>
+    <string name="Qty">Qty</string>
+    <string name="Unit_Price">Unit Price:</string>
+    <string name="Total">Total :</string>
+    <string name="Next">Next</string>
+    <string name="Taxable_Value">Taxable Value:</string>
+    <string name="Total_GST">Total GST :</string>
+    <string name="Shipping">Shipping :</string>
+    <string name="Charges">Charges :</string>
+    <string name="AmountPaid">Amount Paid :</string>
+    <string name="Balance">Balance :</string>
+    <string name="Reverse_charges">Reverse charges :</string>
+    <string name="Download">Download</string>
+    <string name="View">View</string>
+    <string name="Share">Share</string>
+    <string name="Print">Print</string>
+    <string name="Date">Date:</string>
+    <string name="Sr">Sr no</string>
+    <string name="InvoiceNumber">Invoice No.</string>
+    <string name="Amount">Amount</string>
+    <string name="PaymentMode">Payment Mode</string>
+    <string name="PaymentModeWithHy">Payment Mode :</string>
+    <string name="TotalSsale">Total Sale</string>
+    <string name="ChequeNumber">Cheque Number</string>
+    <string name="BankName">Bank Name</string>
+    <string name="ChequeName">Name</string>
+    <string name="TypeOfPayment">Type of Payment</string>
+    <string name="CompanyName">Company  Name</string>
+    <string name="RateOfInterest">Rate of Interest</string>
+    <string name="TimeOfBound">Time of Bound</string>
+    <string name="policyNumber">Policy Number</string>
+    <string name="PanCard">PAN Card No :</string>
+    <string name="IfcNumber">IFSC Number :</string>
+    <string name="Account">Account number</string>
+    <string name="QuotationNumber">Quotation No :</string>
+    <string name="QuotationNum">Quotation No</string>
+    <string name="Discount">Discount</string>
+    <string name="ProceedToQuotation">Proceed To Quotation</string>
+    <string name="Rs">Rs</string>
+    <string name="ViewCart">View Cart</string>
+    <string name="ProceedToBilling">Proceed To Billing</string>
+    <string name="ProceedToPay">Proceed To Pay</string>
+    <string name="Specification">Specification:</string>
+    <string name="DiscountedPrice">Discounted Price :</string>
+    <string name="placeOfSuppler">Place of Supplier :</string>
+    <string name="transactionId">Transaction No :</string>
+    <string name="otherCharges">Other Chrages :</string>
+    <string name="TotalAmount">Total Amount :</string>
+    <string name="BalancePaid">Amount Paid :</string>
+    <string name="BalanceDue">Balance Due :</string>
+    <string name="Success">Success</string>
+    <string name="Pending">Pending</string>
+    <string name="AccountHolderName">Account Holder Name :</string>
+    <string name="AccountNumber">Account Number :</string>
+    <string name="Remark">Remark of Bill Payment :</string>
+    <string name="PaymentStatus">Payment Status</string>
+    <string name="chequeDate">Cheque Date :</string>
+    <string name="ItemName">Item Name :</string>
+    <string name="ProductName">Product Name :</string>
+    <string name="ItemPrice">Item Price :</string>
+    <string name="StockStorage">Stock Storage:</string>
+    <string name="Mrp">Mrp:</string>
+    <string name="DiscountItem">Discount :</string>
+    <string name="GST">GST :</string>
+    <string name="HSN">HSN :</string>
+    <string name="TotalPrice">Total Price :</string>
+
+    <string name="actMain_msg_device_connecting">Connecting device</string>
+    <string name="actMain_msg_device_connect_succes">Successful connection</string>
+    <string name="actMain_msg_device_connect_fail">connection fail</string>
+    <string name="actDiscovery_msg_starting_device">Starting Bluetooth</string>
+    <string name="dialog_title_sys_err">System Error</string>
+    <string name="actDiscovery_msg_start_bluetooth_fail">Bluetooth device start fail</string>
+    <string name="btn_ok">Ok</string>
+    <string name="actMain_device_info">Info</string>
+    <string name="actDiscovery_bond_nothing">Nothing</string>
+    <string name="actDiscovery_bond_bonded">Bounded</string>
+    <string name="actDiscovery_msg_select_device">Select Device Need to Connect</string>
+    <string name="actDiscovery_msg_not_find_device">Device not found</string>
+    <string name="actDiscovery_msg_scaning_device"><![CDATA[Scanning for Bluetooth Devices, Please wait]]></string>
+    <string name="actDiscovery_msg_bluetooth_not_start">Bluetooth is not enabled</string>
+    <string name="device_type_bredr">BR/EDR Bluetooth</string>
+    <string name="device_type_ble">Low Energy Bluetooth</string>
+    <string name="device_type_dumo">Duplex mode Bluetooth</string>
+    <string name="actDiscovery_name">BT</string>
+    <string name="dateTime"><![CDATA[Date & Time :]]></string>
+    <string name="Item">Item</string>
+    <string name="TotalQty">Total Qty :</string>
+    <string name="Total_Amount">Total Amount :</string>
+    <string name="AddRemaining">Add Remaining</string>
+    <string name="Custmessage">Get  in touch with Customer</string>
+    <string name="save">Save</string>
+    <string name="notification">Notifications for M-hourz Users</string>
+    <string name="know">Know who we are !</string>
+    <string name="wearehere">We are here to Help You !</string>
+    <string name="UserManual">User Manul to M-Hourz</string>
+    <string name="Quation">Quations and Answers  on M-Hourz</string>
+    <string name="Tutorails">Tutorails (M-Hourz video)</string>
+    <string name="LetsKnows">Let\'s Us Know What you think about us ?</string>
+    <string name="policies"> M-Hourz Policies</string>
+    <string name="Services">Services</string>
+    <string name="DesignInindai">Design with</string>
+    <string name="In">IN</string>
+    <string name="MHOURZ">M-Hourz</string>
+    <string name="Updates">Updates</string>
+    <string name="Team">Team M-Hourz</string>
+    <string name="NewsFeed">News Feed</string>
+    <string name="OfficalAddress">Behind Mohurle Hospital, Near Bank of Maharashtra, Durgapur Road, Tukum, Chandrapur (M.S) 442401, INDIA</string>
+    <string name="formoreQuariy">For Queries and Questions Feel Free to Call Our Customer Care  Facility </string>
+    <string name="phoneNumber">+91 7861998866</string>
+    <string name="Support">Support@markethourz.com</string>
+    <string name="techSupport">Info@mechatrontechgear.com  </string>
+    <string name="techSupportTeam">team@mechatrontechgear.com</string>
+    <string name="Mission">Our Mission</string>
+    <string name="misssionString">To provide the facility for managing business digitally and also enabling Businesses to accept payments in multiple modes possible.</string>
+    <string name="sayno">So never so No to your customers when they ask for Cashless Payment.</string>
+    <string name="About">About</string>
+    <string name="Descriptions">Description :</string>
+    <string name="TimePeriod">Please Select Time Period for Analysis</string>
+    <string name="ViewAnalysis">  View Analysis</string>
+    <string name="PleaseSelectMonth">(Please Seclect Month for Analysis)</string>
+    <string name="From">From</string>
+    <string name="To">To</string>
+    <string name="HightSalingDay">Highest Selling Days</string>
+    <string name="HightPurchaseDay">Highest Purchase Day</string>
+    <string name="CustomerDay">Highest Customer Day</string>
+    <string name="HighestSaletoCustDay">Highest Sale to Customer</string>
+    <string name="RepetitiveDay">Repetitive Cutomer</string>
+    <string name="SaleCatDay">Top Sale Product Category</string>
+    <string name="TopSaleCatDay">Top Selling Products</string>
+    <string name="TotalAnalysis">Total Analysis</string>
+    <string name="PleaseSelectDate"> ( Please select Date Range for Analysis )</string>
+    <string name="HightSalingWeek">Highest Selling in Week</string>
+    <string name="HightSalingMonth">Highest selling in Month</string>
+    <string name="HightPurchaseMonth">Highest Purchase in  Month</string>
+    <string name="HightSaleMonth">Highest Expense in Week</string>
+    <string name="HightSalingYear">Highest selling in Year</string>
+    <string name="HightPurchaseYear">Highest Purchase in Year</string>
+    <string name="HightSaleYear">Highest Sale in Year</string>
+    <string name="Year">Year</string>
+    <string name="Month">Month</string>
+    <string name="HightSaleDay">Highest sales Day</string>
+    <string name="HightPurchaseWeek">Highest Purchase Week</string>
+    <string name="RepetetiveCustomer">Repetative Customer</string>
+    <string name="CustomerName">Customer Name</string>
+    <string name="ProductType">Product Type</string>
+    <string name="TotalSale">Total Sale</string>
+    <string name="TopSallingProductCategories">Top Selling Product Categories</string>
+    <string name="TaxableValue">Taxable Value</string>
+    <string name="TotalGST">Total GST</string>
+    <string name="Quaility">Output Laibility</string>
+    <string name="Input">Input Laibility</string>
+    <string name="profit">Profit:</string>
+    <string name="loss">Loss:</string>
+    <string name="BusinessStatus">Business Status</string>
+    <string name="TotalExpenses">Total Expenses</string>
+
+    <string-array name="payment_array">
+        <item>Cash</item>
+        <item>Account</item>
+    </string-array>
+
+    <string-array name="payment_mode">
+        <item>Cash Payment</item>
+        <item>Debit Card payment</item>
+        <item>Credit  Card payment</item>
+        <item>Net Banking</item>
+        <item>E Wallet</item>
+        <item>Paytm</item>
+        <item>UPI apps</item>
+        <item>Bhim App</item>
+        <item>Using Banking details</item>
+        <item>By Cheque</item>
+        <item>EMI</item>
+    </string-array>
+
+
+    <string-array name="measurement_unit">
+        <item>Select Measurment unit</item>
+        <item>Unit</item>
+        <item>Gram</item>
+        <item>Liter</item>
+        <item>Meter</item>
+    </string-array>
+
+
+    <string-array name="unit">
+        <item>Unit (Un)</item>
+        <item>Nos (n)</item>
+        <item>Pieces (p)</item>
+        <item>Full (f)</item>
+        <item>Half (h)</item>
+    </string-array>
+
+
+    <string-array name="gram">
+        <item>Milligram (mg)</item>
+        <item>Gram (gm)</item>
+        <item>Kilogram (kg)</item>
+        <item>Quintal (ql)</item>
+        <item>Tonne (t)</item>
+    </string-array>
+
+    <string-array name="liter">
+        <item>Mililiter (ml)</item>
+        <item>Liter (l)</item>
+        <item>Kiloliter (kl)</item>
+    </string-array>
+
+
+    <string-array name="meter">
+        <item>Milimeter (mm)</item>
+        <item>Feet (ft)</item>
+        <item>Centimeter (cm)</item>
+        <item>Inch (in)</item>
+        <item>Meter (m)</item>
+        <item>KiloMeter (km)</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Select Category</item>
+        <item>Customer Status</item>
+        <item>Account Type</item>
+        <item>Taxation Type</item>
+        <item>Mode of payment Using M-Hourz</item>
+        <item>State And District</item>
+    </string-array>
+
+    <string-array name="users">
+        <item>Select User Type</item>
+        <item>Owner</item>
+        <item>Main User</item>
+        <item>Manager</item>
+        <item>Cashier</item>
+        <item>Inventory Management</item>
+        <item>Accountant</item>
+    </string-array>
+
+    <string-array name="customer">
+        <item>All</item>
+        <item>Trail</item>
+        <item>Live</item>
+        <item>Discountinue</item>
+    </string-array>
+
+    <string-array name="account_type">
+        <item>All</item>
+        <item>Razorpay</item>
+        <item>Non-Razorpay</item>
+
+    </string-array>
+
+    <string-array name="user_role">
+        <item>User Type</item>
+        <item>Owner</item>
+        <item>Main User</item>
+        <item>Manager</item>
+        <item>Cashier</item>
+        <item>Inventory Management</item>
+        <item>Accountant</item>
+
+    </string-array>
+
+    <string-array name="shop_document">
+        <item>Select Document Type</item>
+        <item>SHOP ACT</item>
+        <item>Registration Certificate</item>
+        <item>Shop PAN</item>
+        <item>Shop Electricity Bill</item>
+        <item>GST Certificate</item>
+        <item>OWNER PAN CARD</item>
+        <item>OWNER ADHAR CARD</item>
+        <item>MAIN USER ADHAR CARD</item>
+        <item>MAIN USER PAN CARD</item>
+
+    </string-array>
+
+
+    <string-array name="gst_tax_array">
+        <item>0.00</item>
+        <item>0.25</item>
+        <item>3.00</item>
+        <item>5.00</item>
+        <item>12.00</item>
+        <item>18.00</item>
+        <item>28.00</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DayBook">Day Book</string>
+    <string name="GSTIN">GSTIN :</string>
+    <string name="CreateAccount">Create Account</string>
+    <string name="AccountCreated">Account Created</string>
+    <string name="signup_message">Your M Hourz account has been created, \n Please wait for approval from our side.</string>
+    <string name="thanksfor_singup">Thanks for Signing Up with us !</string>
+    <string name="welcome">Wel-Come to M Hourz family...</string>
+    <string name="jumptopage">Jump to Home Page</string>
+    <string name="EMAILID">Email (optional)</string>
+    <string name="DateOfBitrh">Date of Birth</string>
+    <string name="EmloyeeCode">Employee Code</string>
+    <string name="CreatedOn">Updated On :</string>
+    <string name="CreatedBy">Created By :</string>
+    <string name="Delete">Delete</string>
+    <string name="password">Password</string>
+    <string name="AddUser">Add User</string>
+    <string name="sendSmsToUser">Send sms to user</string>
+    <string name="SaveUser">Save User</string>
+    <string name="EDITPHOTO">EDIT PHOTO</string>
+    <string name="UserDetaails">User Details</string>
+    <string name="UserType">User Type :</string>
+    <string name="Name">Name :</string>
+    <string name="TypeOfBusiness">Type of Business :</string>
+    <string name="ShopActName">Shop Act No :</string>
+    <string name="CIN">CIN :</string>
+    <string name="GSTINUN">GSTIN/UIN :</string>
+    <string name="ShopPanNumber">Shop PAN No :</string>
+    <string name="ShopDesrciption">Shop Description :</string>
+    <string name="Owner">Owner Details</string>
+    <string name="OwnerName">Owner Name</string>
+    <string name="ADHAR">ADHAR No :</string>
+    <string name="MAIN">Main User</string>
+    <string name="Document">Document Details</string>
+    <string name="ADDPHOTO">Add Image</string>
+    <string name="Browse">Browse File</string>
+    <string name="UploadFile">Upload File</string>
+    <string name="SaveDocument">Save Document</string>
+    <string name="AddNewDocument">Add New Document</string>
+    <string name="RoleManagement">Role Managemnt</string>
+    <string name="SubUser">SubUser</string>
+    <string name="EDITDOCUS">Delete Document</string>
+    <string name="poweredBy">Powered By</string>
+    <string name="ServicesName">Service Name</string>
+    <string name="SACCODE">SAC CODE</string>
+    <string name="DurationSpan">Duration Span</string>
+    <string name="DueReminderDate">Due Reminder Day</string>
+    <string name="AmountPerSpan">Amount per span</string>
+    <string name="DiscountInRs">Discount in Rs :</string>
+    <string name="TypeOfService">Type of Service</string>
+    <string name="phone">Mobile</string>
+    <string name="EMAIL_Optional">Email ID (Optional )</string>
+    <string name="StateCode">State Code</string>
+    <string name="PinCode">Pin Code</string>
+    <string name="AddCustomer">Add Customer</string>
+    <string name="PersonalDocument">Personal Document</string>
+    <string name="ID_NUM">ID Number :</string>
+    <string name="Take_photo">Take Photo</string>
+    <string name="Mobile">Mobile :</string>
+    <string name="District">District</string>
+    <string name="DocumentType">Document Type</string>
+    <string name="ViewSummury">View Summary</string>
+    <string name="CustomerDetails">Customer Details</string>
+    <string name="FromDate">From Date</string>
+    <string name="ToDate">Till Date</string>
+    <string name="AddService">Add Service</string>
+    <string name="ServiceAmount">Service Amount</string>
+    <string name="DiscountinPercentage">Discount in % </string>
+    <string name="DiscountedAmount">Discounted Amount</string>
+    <string name="AddToCart">Add to Cart</string>
+    <string name="AddStorageStock">Add Storage Stock Details</string>
+    <string name="StocckQty">Stock Qty</string>
+    <string name="UnitPrice">Unit Price</string>
+    <string name="ITEMBARCODE">Item code/Barcode :</string>
+    <string name="itembarcode">Item code/Barcode</string>
+    <string name="MeasurementUnit">Measurement Unit :</string>
+    <string name="ItemDetails">Item Details</string>
+    <string name="Quantity">Quantity</string>
+    <string name="ChangeUnit">Change Unit :</string>
+    <string name="Price">Price</string>
+    <string name="ViewCustomerDetails">View Customer Details</string>
+    <string name="EditCustomer">Edit Customer</string>
+    <string name="SaleByDate">Sale By Date</string>
+    <string name="Unit">Unit :</string>
+    <string name="CashPayment">Cash payment</string>
+    <string name="Debit_Card_payment">Card /Net Banking/Wallets/UPI</string>
+    <string name="poweredByPayU">(Powered by PayUbiz)</string>
+    <string name="paytm">Paytm Wallet</string>
+    <string name="bhim">BHIM UPI App</string>
+    <string name="sendPaymentLink">Send Payment Gatway Link</string>
+    <string name="ToBankAccount">To Bank Account</string>
+    <string name="ChequePayment">Cheque Payment</string>
+    <string name="EMI">EMI</string>
+    <string name="Debit_Card_Razorpay">Debit Card Payment</string>
+    <string name="poweredByRazorpay">(Powered by Razorpay)</string>
+    <string name="ExpenseName">Expense Name :</string>
+    <string name="GSTPER">GST % :</string>
+    <string name="storageQty">Storage \n qty</string>
+    <string name="stockQty">Stock \n  Qty</string>
+    <string name="AddedStock">Added \n Stock</string>
+    <string name="UpdatedStock">Updated \n Stock</string>
+    <string name="GSTIN_required">GSTIN( if customer is GST register)</string>
+    <string name="Export">Export</string>
+    <string name="Import">Import</string>
+    <string name="TotalQuotations">Total Quotations :</string>
+    <string name="ShareQuotationDetails">Share Quotation Details</string>
+    <string name="TermAndConditions">Terms and Conditions</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="RefundPolicy">Refund Policy</string>
+    <string name="TermsofUse">Terms of use</string>
+    <string name="ServiceAgrement">Service Agreement</string>
+    <string name="EmailAbuse">Email Abuse</string>
+    <string name="Disclaimer">Disclaimer</string>
+    <string name="BusinessForm">M Hourz - Business Information Form</string>
+    <string name="BusinessRecordForm">M Hourz - Customer Record Form</string>
+    <string name="ThatsGreat">Thats Great</string>
+    <string name="TellUs">Tell us What you think about us ?</string>
+    <string name="Whatareuwriting">What are you writing about ?</string>
+    <string name="NotWorking">M Hourz not working</string>
+    <string name="NeedHelp">Need Help</string>
+    <string name="Difficulty">Difficulty in using M Hourz</string>
+    <string name="Other">Other</string>
+    <string name="Submit">Submit</string>
+    <string name="QA"><![CDATA[Q & A]]></string>
+    <string name="Office">Office Address :</string>
+    <string name="saleteam">sale@markethourz.com</string>
+    <string name="ServiceContent">This Page is for \n  Official Use of \n  Team Market Hourz</string>
+    <string name="ServiceConTwo">If you are  \n Member of the Team, \n you can access the page.</string>
+    <string name="AccessService">Access Service</string>
+    <string name="about_text">
+  <![CDATA[
+  <div style="color:white;">
+   <p><strong>MechaTron TechGear Pvt. Ltd.</strong> Came into existence in 2014 and started its full fledge working from 2016. We are located at Chandrapur, Maharashtra. Being a Start Up we have just started to spread our wings to fly up in the sky, where competition and opportunities are waiting for us at the peak. We are going to play it by simple rule, &ldquo;<strong>Always listen to your customers not to your competition.&rdquo;</strong></p>
+<p>We Deal with</p>
+<ul>
+<li>Android Development<br />&bull; Website Development&nbsp;<br />&bull; Software Development<br />&bull; Computer Based Applications.<br />&bull; Search Engine Optimization.<br />&bull; Marketing and Sales and many more.</li>
+</ul>
+<h3>Currently working on:</h3>
+<h3>We delivers mobile based application for retailers, hotels, restaurants, service providers etc. for implementing a step towards cashless society as initiated by our Hon. Prime Minister Shri. Narendra Modi. Our application is basically a step towards maintaining bill records in a proper manner to not get hassle at the time of auditing. Our main motto is to &ldquo;Make the customer Hero of our Story&rdquo;.</h3>
+<h3>Mission:</h3>
+<h3>The demonetization of the 500 rupee note and the 1,000 rupee note will likely hit the economy hard in the short term. As we all know that most of the Indian peoples are moving toward cashless transactions and in Support of Cashless Payments Government of India has also started so many services for the same. In present the problem is that there are so many ways to do cashless transaction (for example E Wallets, UPI, POS Machines, Net Banking etc.) but there are not many options available in market. If we go to shop in bigger cities like Mumbai and ask for Card Payment then most of the shops do have POS machines but if we go to the shop in small city like chandrapur there you will find only bigger shops having facility of POS machine. And if we want to make India a Cashless Country each and every service provider (ex. Shops, hotels etc.) should have facility do accept cashless payment. People should be able to pay money through any options whether it is UPI, E Wallets, POS, Net Banking, Mobile Banking or using apps like BHIM.</h3>
+<h3>In order to solve these problems we are making a project which will enable shopkeepers and hotels to accept payments through various options available. We are simply going to develop a mobile application which will allow merchants to accept payment through various options available and this application will also maintain a record of all the transactions whether it is Cash Payment, Card Swipe Payment, Payment Gateway payment, E Wallet payment, Net Banking, Mobile banking, or using banking details. This app will Make a Bills for a customers Buy and then after successful payment it will send SMS Receipt on a customer&rsquo;s mobile number with a link of bill receipt. All the bill record will be saved on cloud storage and can be viewed as per their need. In this manner we are planning to solve a problem of maintain a bill records on paper and also making the Indian market Cashless so that people will be enabled to more options of making &amp; accepting Cashless Payments.</h3>
+<h3>Company Details:</h3>
+<h3>Company Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MECHATRON TECHGEAR PRIVATE LIMITED</h3>
+<h3>CIN: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U74110MH2014PTC253035</h3>
+<h3>Date of Incorporation: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10/02/2014</h3>
+<h3>GSTIN :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 27AAFCG5577Q1ZQ</h3>
+<h3>Address: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bengali Camp, Near Police Station, Bypass road, Chandrapur, Maharashtra- 442401 (INDIA)</h3>
+<h3>Founders :</h3>
+<table>
+<tbody style="color:white;>
+<tr>
+<td width="223">
+<p><strong>Mahesh C. Pipare</strong></p>
+<p><strong>Founder/ CEO</strong></p>
+<p>MechaTron TechGear Pvt. Ltd.</p>
+</td>
+<td width="216">
+<p><strong>Pankaj Madavi</strong></p>
+<p><strong>Co-Founder/ Director</strong></p>
+<p>MechaTron TechGear Pvt. Ltd.</p>
+</td>
+<td width="222">
+<p><strong>Amol Kore</strong></p>
+<p><strong>Co-Founder/ Director</strong></p>
+<p>MechaTron TechGear Pvt. Ltd.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+ ]]>
+</string>
+    <string name="MHourZCampaign">M Hourz campaign</string>
+    <string name="HightExpenseMonth">Higest Expense in Month</string>
+    <string name="indiafirstcashless">India\'s #1 GST Ready cashless Billing Acceptance Mobile App</string>
+    <string name="ShareInvoiceDetails">Share Invoice Details</string>
+    <string name="AddDiscountHere">Add Discount Here</string>
+    <string name="PleaseSelectYEAR">Please Select Year for Anlysis</string>
+    <string name="Supply">P/Supply</string>
+    <string name="Homedelivery">Hone Delivery</string>
+    <string name="email">Email :</string>
+    <string name="HightExpenseDay">Highest Expense Day</string>
+    <string name="CustomerAnalysis">Customer Analysis</string>
+    <string name="ViewImage">View Images</string>
+    <string name="PurchaseImages">Purchase Images</string>
+    <string name="HighestNofCust">Highest No of Customer a Day</string>
+    <string name="ImageName">Image Name</string>
+    <string name="DocType">Document Type</string>
+    <string name="AddMoreQty">Add More Quantity</string>
+
+    <string name="State">State :</string>
+    <string name="FileName">File Name :</string>
+    <string name="title_activity_purchase_image_list">PurchaseImageList</string>
+    <string name="TransactionNumber">Transaction Number</string>
+    <string name="updatedBy">Updated By</string>
+    <string name="Created_on">Created on</string>
+    <string name="employeeCode">Employee Code</string>
+    <string name="ImportCust">Import Customer List</string>
+    <string name="ExportCust">Export Customer List</string>
+    <string name="ImportItem">Import Item</string>
+    <string name="ExportItem">Export Item</string>
+    <string name="ImportMenuItem">Import Menu Item</string>
+    <string name="ExportMenuItem">Export Menu Item</string>
+    <string name="ImportVendorDeatils">Import Vendor Details</string>
+    <string name="ImportCustDeatils">Import Customer Details</string>
+    <string name="ImportItemDeatils">Import Item Details</string>
+    <string name="ImportMenu">Import Menu Item Details</string>
+    <string name="UploadVendor">Upload .xls file in the mentioned format in sample file you downloaded.</string>
+    <string name="AddFile">Add File</string>
+    <string name="ExportVendorDeatils">Export Vendor Details</string>
+    <string name="ExportCustDeatils">Export Customer Details</string>
+    <string name="ExportItemDeatils">Export Item Details</string>
+    <string name="ExportMenu">Export Menu Item Details</string>
+    <string name="FinalPrice">Final price :</string>
+    <string name="CurrentBalance">Current Balance :</string>
+    <string name="Transactions">Transaction</string>
+    <string name="BarCode">Barcode Search</string>
+    <string name="DownloadStcok">Download Stock</string>
+    <string name="PurchaseMessage">Please click here to view Purchase Details</string>
+    <string name="BARCODE">Barcode :</string>
+    <string name="BARCODESCAN"> Proceed  \n Barcode Scan</string>
+    <string name="PurchaseProduct">purchase product</string>
+    <string name="scannProductBarcode">Scan Product Barcode</string>
+    <string name="DownloadSampleFile">Download sample File to Import Vendor details</string>
+    <string name="DownloadSampleFileCustomer">Download sample File to Import Customer Details</string>
+    <string name="DownloadSampleFileItem">Download Sample File to Import Item</string>
+    <string name="DownloadSampleFilemenu">Download Sample file to Import Menu Items</string>
+    <string name="MUnit">M Unit</string>
+    <string name="Tran_ref">Transaction/Ref No :</string>
+    <string name="PaymentModeUsed">Payment Mode Used :</string>
+    <string name="ViewDetails">Details</string>
+    <string name="Amountpaid">Amount Paid</string>
+    <string name="manubarcode">Proceed \n   Manual Purchase Add</string>
+    <string name="Invoice">Inv Number:</string>
+    <string name="exportStateID">Export State Id</string>
+    <string name="PayMode">Pay Mode</string>
+    <string name="ShareBankDetails">Share Bank Details</string>
+</resources>

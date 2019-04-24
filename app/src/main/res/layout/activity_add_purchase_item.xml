@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inevitablesol.www.shopmanagement.purchase_module.AddPurchaseItem">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+
+    <ScrollView
+
+        android:id="@+id/activity_add_purchase_item"
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context="com.inevitablesol.www.shopmanagement.purchase_module.AddPurchaseItem">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/black"
+            android:layout_height="match_parent"
+            tools:context="com.inevitablesol.www.shopmanagement.purchase_module.AddPurchaseItem">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Select  Shop      :"
+                            android:textSize="12sp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_height="wrap_content" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:background="@color/colorPrimary"
+                            android:layout_height="wrap_content">
+
+
+                            <Spinner
+                                android:layout_width="0dp"
+                                android:id="@+id/spnn_product_type"
+                                android:overlapAnchor="true"
+                                android:layout_weight="2"
+                                android:popupBackground="#d19400"
+                                android:layout_height="wrap_content">
+
+                            </Spinner>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_gravity="center"
+                                android:text="Place of Supply :"
+                                android:textColor="@color/colorPrimary"
+                                android:layout_height="wrap_content" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+
+                                android:background="@color/colorPrimary"
+                                android:layout_height="wrap_content">
+
+
+                                <Spinner
+                                    android:layout_width="0dp"
+                                    android:id="@+id/purchase_supplier"
+                                    android:overlapAnchor="true"
+                                    android:layout_weight="2"
+                                    android:popupBackground="#d19400"
+                                    android:layout_height="wrap_content">
+
+                                </Spinner>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="end"
+                            android:gravity="end"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/colorPrimary"
+                                android:text="@string/GST_STATUS"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/colorPrimary"
+                                android:text="@string/GSTIN"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                android:textColor="@color/colorPrimary"
+                                android:text="Invoice Date :"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView13" />
+
+                              <TextView
+                                  android:layout_width="match_parent"
+                                  android:gravity="end"
+                                  android:paddingTop="10dp"
+                                  android:layout_margin="5dp"
+                                  android:textColor="@color/colorPrimary"
+                                  android:text="@string/Invoice"
+                                  android:layout_height="wrap_content" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="1dp"
+                            android:layout_weight="3"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                android:id="@+id/txt_view_v_GstStatus"
+                                android:textColor="@color/color_grey"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:layout_margin="5dp"
+                                android:id="@+id/txt_view_v_GSTNO"
+                                android:textColor="@color/color_grey"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_margin="5dp"
+                                    android:id="@+id/id_sale_Date"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/color_grey"/>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:id="@+id/im_invDatePicker"
+                                    android:src="@drawable/ic_date_range"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_height="wrap_content">
+
+                                <android.support.design.widget.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/input_innvoiceNumber"
+                                    android:inputType="numberDecimal"
+                                    android:background="@drawable/bottomline"
+                                    android:textColor="@color/color_grey"
+                                    android:hint="" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+                <!-- Original prize Label -->
+
+
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:gravity="center"
+                     android:layout_height="wrap_content">
+
+
+                     <android.support.v7.widget.AppCompatButton
+                         android:layout_width="wrap_content"
+                         android:id="@+id/take_inv_photo"
+                         android:backgroundTint="@color/colorPrimary"
+                         android:text="Add Docoment"
+                         android:textAllCaps="false"
+                         android:textColor="@android:color/white"
+                         android:layout_height="wrap_content" />
+
+
+
+                     <android.support.v7.widget.AppCompatButton
+                         android:layout_width="wrap_content"
+                         android:id="@+id/uploadImage"
+                         android:backgroundTint="@color/colorPrimary"
+                         android:text="Upload"
+                         android:textAllCaps="false"
+                         android:textColor="@android:color/white"
+                         android:layout_height="wrap_content" />
+
+
+                 </LinearLayout>
+
+
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_marginLeft="10dp"
+                              android:text="@string/FileName"
+                              android:textColor="@color/color_grey"
+                              android:layout_height="wrap_content" />
+
+                          <TextView
+                              android:layout_width="match_parent"
+                              android:id="@+id/fileName"
+                              android:layout_marginLeft="10dp"
+                              android:text="@string/FileName"
+                              android:textColor="@color/color_grey"
+                              android:layout_height="wrap_content" />
+
+
+
+                      </LinearLayout>
+
+
+
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/color_grey"
+                    android:id="@+id/invoice_image"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/barcodeScan"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:background="@drawable/rectangleshape"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:text="@string/BARCODESCAN"/>
+
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/purchase_next"
+            android:layout_width="0dp"
+             android:layout_marginLeft="5dp"
+            android:background="@drawable/rectangleshape"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:text="@string/manubarcode"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+

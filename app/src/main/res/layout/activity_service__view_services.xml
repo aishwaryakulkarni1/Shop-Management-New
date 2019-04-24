@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/squareshape"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_height="wrap_content">
+
+                <EditText android:id="@+id/input_serviceSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:drawableRight="@drawable/search"
+                    android:hint="Service Name" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:paddingTop="14dp"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:text="Name"
+                android:layout_weight="4"
+                android:textColor="@color/color_grey"
+                android:layout_height="match_parent"
+                android:id="@+id/textView11" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:text="@string/SACCODE"
+                android:textColor="@color/color_grey"
+                android:layout_height="match_parent"
+                android:id="@+id/contact" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <View android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mustardbrown">
+            </View>
+
+        </LinearLayout>
+
+
+        <include layout="@layout/stockview_recyclerview" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+

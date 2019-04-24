@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.pddstudio:urlshortener-1.0.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/urlshortener-1.0.2.aar/a423d042fabcf725e7f590da517fb5e5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/urlshortener-1.0.2.aar/a423d042fabcf725e7f590da517fb5e5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.pddstudio/urlshortener/1.0.2/5e1f24c791422f99933a5b4228e252d4777dfa05/urlshortener-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

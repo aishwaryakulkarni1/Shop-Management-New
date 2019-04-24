@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_more__policy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.more.More_Policy">
+    <include layout="@layout/view_line" ></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ly_policy_terms"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/color_grey"
+            android:text="@string/TermAndConditions"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView42" />
+    </LinearLayout>
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+         android:id="@+id/ly_policy"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/color_grey"
+            android:text="@string/PrivacyPolicy"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ly_policy_refund"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/color_grey"
+            android:text="@string/RefundPolicy"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ly_policy_termsUse"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/color_grey"
+            android:text="@string/TermsofUse"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_line"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ly_policy_ServiceAgreement"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/color_grey"
+            android:text="@string/ServiceAgrement"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ly_policy_Email"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/color_grey"
+            android:text="@string/EmailAbuse"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_line"></include>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ly_policy_Disclaimer"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:textColor="@color/color_grey"
+            android:text="@string/Disclaimer"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/view_line"></include>
+
+
+
+
+
+</LinearLayout>

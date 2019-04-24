@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_line"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rectangleshape"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="10dp"
+                    android:text="@string/CustomerName"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/Mobile"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/EMAIL"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/GST_STATUS"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/GST_IN"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:text="@string/placeOfSuppler"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/Address"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/District"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/State_Code"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/PinCode"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+            </LinearLayout>
+        <include layout="@layout/view_line"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:text="@string/PersonalDocument"
+            android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+    <include layout="@layout/view_line"></include>
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:orientation="vertical"
+
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:textColor="@color/colorPrimary"
+               android:text="@string/DocumentType"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content" />
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:textColor="@color/colorPrimary"
+               android:text="@string/ID_NUM"
+               android:layout_margin="10dp"
+               android:layout_height="wrap_content" />
+
+
+       </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+                 <ImageView
+                     android:layout_width="100dp"
+                       android:scaleType="centerCrop"
+                     android:background="@color/color_grey"
+                     android:layout_height="100dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/v_call"
+                android:layout_weight="1"
+                android:src="@drawable/ic_phone"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/v_sms"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_sms"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/v_mail"
+                android:src="@drawable/ic_action_mail"
+                android:layout_height="wrap_content" />
+
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:text="Remove"
+                android:id="@+id/remove_vendor"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

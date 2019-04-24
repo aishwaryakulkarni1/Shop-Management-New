@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/black"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangleshape"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Item Details "
+                    android:textSize="18sp"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product Type :"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product ID :"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product Name  :"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="HSN CODE:"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/ITEMBARCODE"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product Company :"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product Specification :"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product Type :"
+                        android:id="@+id/h_type"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product Type :"
+                        android:id="@+id/txt_p_id"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product Name  :"
+                        android:id="@+id/h_itemName"
+
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="HSN/SAC:"
+                        android:id="@+id/h_hsn"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_itembarcode"
+                        android:text=" :"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Product Company :"
+                        android:id="@+id/h_cName"
+
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/h_specification"
+                        android:text="Product Specification :"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Purchase Details"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/color_grey"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Storage \n Qty"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Original \n Price"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="MRP"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="GST %"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/h_stockStorage"
+                    android:text="Storage Qty"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/h_itemPrice"
+                    android:text="Original Price"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/h_mrp"
+                    android:text="@string/Mrp"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="GST %"
+                    android:id="@+id/h_gst"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Stock Detail"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/color_grey"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp">
+
+            </View>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Stock Qty"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Unit \n Price"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Discount \n in Rs"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="GST %"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/add_newStockQty"
+                    android:text="Storage Qty"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/add_newunitPrice"
+                    android:text="Original Price"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/add_newMrp"
+                    android:text="@string/Mrp"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="GST %"
+                    android:id="@+id/add_new_gst"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/MeasurementUnit"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/Unit"
+                        android:layout_height="wrap_content" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_munit"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/color_grey"
+                        android:text=""
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_unit"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/color_grey"
+                        android:text=""
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <include layout="@layout/view_line"></include>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="end"
+                        android:layout_gravity="end"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:text="@string/Unit_Price"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Discount in Rs :"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:text="Discount in % :"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/h_unitPrice"
+                            android:layout_marginTop="10dp"
+                            android:inputType="numberDecimal"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/color_grey"
+                            android:hint="" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:id="@+id/h_discount"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/color_grey"
+                            android:hint="" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/h_dicountPer"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/color_grey"
+                            android:hint="" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp">
+
+            </View>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="end"
+                    android:text="@string/ItemPrice"
+                    android:textColor="@color/green"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/tv_discountedPrice"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/color_grey"
+                    android:hint="" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

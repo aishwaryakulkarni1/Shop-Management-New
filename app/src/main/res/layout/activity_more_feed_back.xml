@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_more_feed_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.more.More_feedBack">
+    <include layout="@layout/view_line"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:src="@drawable/feedback_inside"
+            android:layout_height="wrap_content" />
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:text="@string/ThatsGreat"
+             android:textSize="24sp"
+             android:textColor="@color/colorPrimary"
+             android:layout_gravity="center"
+             android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/TellUs"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content" />
+        <include layout="@layout/view_line"></include>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/Whatareuwriting"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/rg_wish_noti"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:text="Bug"
+                            android:textSize="14dp"
+                            style="@style/RadioButton"
+                            android:id="@+id/rb_wish_noti_yes"
+                            android:textColor="@color/color_grey"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            style="@style/RadioButton"
+                            android:id="@+id/rb_wish_noti_no"
+                            android:backgroundTint="@color/mustardbrown"
+                            android:textColor="@color/color_grey"
+                            android:text="customer service"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:text="User Interface"
+                            android:textSize="14dp"
+                            style="@style/RadioButton"
+                            android:textColor="@color/color_grey"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            style="@style/RadioButton"
+                            android:backgroundTint="@color/mustardbrown"
+                            android:textColor="@color/color_grey"
+                            android:text="Online Payment"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:text="@string/NotWorking"
+                            android:textSize="14dp"
+                            style="@style/RadioButton"
+                            android:textColor="@color/color_grey"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            style="@style/RadioButton"
+                            android:backgroundTint="@color/mustardbrown"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/NeedHelp"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            android:text="@string/Difficulty"
+                            android:textSize="14dp"
+                            style="@style/RadioButton"
+                            android:textColor="@color/color_grey"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="0dp"
+                            style="@style/RadioButton"
+                            android:backgroundTint="@color/mustardbrown"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/Other"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <include layout="@layout/view_line"></include>
+
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_margin="10dp"
+                 android:background="@drawable/rectangleshape"
+                 android:layout_height="wrap_content">
+                 
+                 <android.support.design.widget.TextInputEditText
+                     android:layout_width="match_parent"
+                     android:minLines="8"
+                     android:inputType="textMultiLine"
+                     android:lines="8"
+                     android:textColor="@color/color_grey"
+                     android:hint="Let's us know more"
+                     android:gravity="top|left"
+                     android:layout_height="wrap_content" />
+                 
+             </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="@string/Submit"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:layout_marginTop="5dp"
+        android:background="@drawable/rectangleshape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:visibility="invisible"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Cart for"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txt_billcustName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/barcodeswitch"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+
+            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/squareshape"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:id="@+id/spnn_product_bill"
+                android:overlapAnchor="true"
+                android:layout_gravity="center"
+                android:popupBackground="#d19400"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@drawable/squareshapegrey"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText android:id="@+id/bill_productname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:drawableRight="@drawable/search"
+                        android:hint="" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mustardbrown">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2.5"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Product description"
+                android:id="@+id/textView9" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:letterSpacing="0.05"
+                    android:text="Price"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/colorPrimary"
+                    android:letterSpacing="0.05"
+                    android:text="Unit"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:letterSpacing="0.05"
+                    android:text="Qty"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mustardbrown">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/bill_recyclerView"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:letterSpacing="0.05"
+                    android:text="Cart Items :"
+                    android:textColor="@color/color_grey"
+                    android:textSize="16.7sp" />
+
+                <TextView
+                    android:id="@+id/total_billin_qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:letterSpacing="0.05"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16.7sp" />
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="2dp"></View>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:letterSpacing="0.05"
+                    android:text="Amount:"
+                    android:textColor="@color/color_grey"
+                    android:textSize="16.7sp" />
+
+                <TextView
+                    android:id="@+id/total_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:letterSpacing="0.05"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="16.7sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:id="@+id/bill_viewcart"
+            android:textColor="@color/white"
+            android:text="@string/ViewCart"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+

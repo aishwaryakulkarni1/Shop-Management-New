@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.report.DayBook_Activity">
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+         android:orientation="vertical"
+        android:id="@+id/testcontainer"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/Date"
+                android:layout_marginRight="10dp"
+                android:textSize="16sp"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:text="@string/Date"
+                android:id="@+id/bill_curruntDate"
+                android:textSize="16sp"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/date_billingDate"
+                android:src="@drawable/ic_date_range"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/rectangleshape"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Sale"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+            <include layout="@layout/view_line"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="5dp"
+                    android:text="Total Number of Invocies"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="5dp"
+
+                    android:text="@string/TotalSale"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Amount Received"
+                    android:layout_margin="5dp"
+
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Balance Due"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                         android:id="@+id/total_invoice"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:layout_margin="5dp"
+                        android:text="Total Number of Invocies"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/total_sale"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:layout_margin="5dp"
+                        android:text="@string/TotalSale"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/total_received"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:text="Amount Received"
+                        android:layout_margin="5dp"
+
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/total_balanceDue"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:text="Balance Due"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+                <include layout="@layout/view_line"></include>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Purchase Report"
+                    android:gravity="center"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/view_line"></include>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_margin="5dp"
+                              android:textColor="@color/colorPrimary"
+                              android:text="Total Number of Invocies"
+                              android:layout_height="wrap_content" />
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_margin="5dp"
+                              android:textColor="@color/colorPrimary"
+                              android:text="@string/TotalSale"
+                              android:layout_height="wrap_content" />
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:layout_margin="5dp"
+                              android:textColor="@color/colorPrimary"
+                              android:text="Amount Received"
+                              android:layout_height="wrap_content" />
+
+
+                          <TextView
+                              android:layout_width="wrap_content"
+                              android:text="Balance Due"
+                              android:textColor="@color/colorPrimary"
+                              android:layout_height="wrap_content" />
+
+                      </LinearLayout>
+
+                      <LinearLayout
+                          android:layout_width="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_height="wrap_content">
+                          <TextView
+                              android:id="@+id/p_total_invoice"
+                              android:layout_width="wrap_content"
+                              android:textColor="@color/color_grey"
+                              android:layout_margin="5dp"
+                              android:text="Total Number of Invocies"
+                              android:layout_height="wrap_content" />
+
+                          <TextView
+                              android:id="@+id/p_total_sale"
+                              android:layout_width="wrap_content"
+                              android:textColor="@color/color_grey"
+                              android:layout_margin="5dp"
+                              android:text="@string/TotalSale"
+                              android:layout_height="wrap_content" />
+
+                          <TextView
+                              android:id="@+id/p_total_received"
+                              android:layout_width="wrap_content"
+                              android:textColor="@color/color_grey"
+                              android:text="Amount Received"
+                              android:layout_margin="5dp"
+
+                              android:layout_height="wrap_content" />
+
+
+                          <TextView
+                              android:id="@+id/p_total_balanceDue"
+                              android:layout_width="wrap_content"
+                              android:textColor="@color/color_grey"
+                              android:text="Balance Due"
+                              android:layout_margin="5dp"
+                              android:layout_height="wrap_content" />
+
+                      </LinearLayout>
+
+                  </LinearLayout>
+
+
+
+                <include layout="@layout/view_line"></include>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Expense Report"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+                <include layout="@layout/view_line"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Total Number of Invocies"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/TotalSale"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Amount Received"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Balance Due"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/e_total_invoice"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:layout_margin="5dp"
+                        android:text="Total Number of Invocies"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/e_total_sale"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:layout_margin="5dp"
+                        android:text="@string/TotalSale"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/e_total_received"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:text="Amount Received"
+                        android:layout_margin="5dp"
+
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/e_total_balanceDue"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:text="Balance Due"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_height="wrap_content">-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Total Expense"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="₹"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:id="@+id/exp_view_totalExp"-->
+                        <!--android:text="@string/Amount"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Total Balance"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="₹"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="Balance"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:id="@+id/textView30" />-->
+
+                <!--</LinearLayout>-->
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Download Report"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/img_dayBook"
+                    android:src="@drawable/download"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

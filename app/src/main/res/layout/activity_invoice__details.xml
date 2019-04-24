@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invoice__details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.billing_module.Invoice_Details">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+    
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+  
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/color_grey"
+                 android:text="Customer Details"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                 android:text="Name:"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Name"
+                android:id="@+id/inv_h_name"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Mobile:"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Name"
+                android:id="@+id/inv_h_mobile"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Email:"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Name"
+                android:id="@+id/inv_h_email"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+         android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+             android:text="Invoice Details"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="InvoiceNumber:"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/inv_h_numer"
+                android:text="InvoiceNumber:"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:text="@string/dateTime"
+               android:textColor="@color/color_grey" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_marginLeft="10dp"
+               android:id="@+id/inv_h_datetime"
+               android:text="InvoiceNumber:"
+               android:textColor="@color/color_grey"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/Item"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/Qty"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/Amount"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/inv_h_recycle"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+        
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/TotalQty"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:id="@+id/inv_totalQty"
+                   android:textColor="@color/color_grey"
+                   android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="end"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                android:layout_width="wrap_content"
+                    android:gravity="end"
+                android:text="@string/Taxable_Value"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="end"
+                    android:text="@string/GST"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/color_grey"
+                    android:id="@+id/inv_h_taxValue"
+                    android:text="@string/Taxable_Value"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/GST"
+                    android:id="@+id/inv_h_gst"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="end"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:orientation="vertical"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:text="@string/Total_Amount"
+                     android:textColor="@color/colorPrimary"
+                     android:layout_height="wrap_content" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:text="@string/AmountPaid"
+                     android:textColor="@color/green"
+                     android:layout_height="wrap_content" />
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:text="@string/BalanceDue"
+                     android:textColor="@color/red"
+                     android:layout_height="wrap_content" />
+
+             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/inv_h_totalAmount"
+                    android:textColor="@color/color_grey"
+                    android:text="@string/TotalAmount"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/AmountPaid"
+                    android:id="@+id/inv_amountpaid"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/BalanceDue"
+                    android:id="@+id/inv_h_balancedue"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+             android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"></View>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/inv_h_addremaining"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@color/colorPrimary"
+                android:padding="5dp"
+                android:text="@string/AddRemaining"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:gravity="center"
+                     android:textColor="@color/white"
+                     android:text="Payment Details"
+                     android:layout_height="wrap_content" />
+
+                  <include layout="@layout/view_line"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                       android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Total"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Paid"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="Balance"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/PayMode"
+                        android:textColor="@color/colorPrimary" />
+
+
+                </LinearLayout>
+
+                <include layout="@layout/view_line"></include>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/txdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Date"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/txtotal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="Total"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/txpaid"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="Paid"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txbalance"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:text="Balance"
+                        android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/payment_mode"
+                        android:text="@string/ViewDetails"
+                        android:textAllCaps="false"
+                        android:background="@drawable/rectangleshape"
+                        android:textColor="@color/white"
+                        android:padding="10dp"
+                        style="@style/ButtonBorderless"
+                        android:layout_height="35dp" />
+
+                </LinearLayout>
+
+                <include layout="@layout/view_line"></include>
+
+            </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="@string/ShareInvoiceDetails"-->
+                <!--android:textColor="@color/color_grey"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<include layout="@layout/view_line"></include>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:src="@drawable/gmail"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:src="@drawable/whatsapp"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+            <!--</LinearLayout>-->
+
+
+
+        <!--</LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/Custmessage"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/inv_call"
+                android:layout_weight="1"
+                android:src="@drawable/ic_phone"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:id="@+id/inv_sms"
+                android:layout_weight="1"
+                android:src="@drawable/ic_action_sms"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/inv_mail"
+                android:src="@drawable/ic_action_mail"
+                android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

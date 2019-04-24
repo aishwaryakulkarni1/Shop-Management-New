@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_more__contact_us"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.more.More_ContactUS">
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="100dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/mechatron_logo"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+       <include  layout="@layout/view_line">
+
+       </include>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_margin="10dp"
+
+           android:orientation="vertical"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:text="@string/Office"
+               android:textSize="18sp"
+               android:id="@+id/officeaddress"
+               android:textColor="@color/colorPrimary"
+               android:layout_height="wrap_content" />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_below="@+id/addressinfo"
+               android:layout_height="wrap_content" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:id="@+id/addressinfo"
+               android:layout_below="@+id/officeaddress"
+               android:textColor="@color/color_grey"
+               android:text="@string/OfficalAddress"
+               android:layout_height="wrap_content" />
+       </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/colorPrimary"
+        android:text="@string/formoreQuariy"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/blue"
+             android:gravity="center"
+            android:id="@+id/phoneNumber"
+            android:textSize="20sp"
+             android:text="@string/phoneNumber"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/saleteam"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="@string/saleteam"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:text="|"
+                  android:textColor="@color/colorPrimary"
+                  android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/supportteam"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="@string/Support"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/infoteam"
+                android:textSize="12sp"
+                android:text="@string/techSupport"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="|"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:id="@+id/team"
+                android:text="@string/techSupportTeam"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

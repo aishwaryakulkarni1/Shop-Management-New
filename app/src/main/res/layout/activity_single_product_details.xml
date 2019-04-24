@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_single_product_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.product_info.Single_product_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Product Details"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="1dp"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_marginRight="5dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/ProductName"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Item Name :"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="HSN CODE :"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/MUnit"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/Unit"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/BARCODE"
+                            android:layout_height="wrap_content" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text=" Company :"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Owner/Author :"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/Specification"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/itemView_pname"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/ProductName"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/itemView_itemname"
+                            android:textColor="@color/color_grey"
+                            android:text="Item Name :"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/itemView_hsn"
+                            android:textColor="@color/color_grey"
+                            android:text="HSN/SAC :"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txt_munit"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/Unit"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txt_unit"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/Unit"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/txt_itembarcode"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/BARCODE"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/itemView_Company"
+                             android:textColor="@color/color_grey"
+                            android:text="Product Company :"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/itemView_author"
+                            android:textColor="@color/color_grey"
+                            android:text="Owner/Author :"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/itemView_spec"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/Specification"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

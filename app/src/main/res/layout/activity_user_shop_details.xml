@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_shop_details"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.account.User_shopDetails">
+    <include layout="@layout/view_line">
+    </include>
+
+    <ScrollView
+         android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_height="wrap_content">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:text="@string/ShopName"
+               android:layout_height="wrap_content" />
+
+        <include layout="@layout/view_line"></include>
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:src="@drawable/logo"
+              android:layout_margin="10dp"
+              android:layout_gravity="end"
+              android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/Name"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="5dp"
+                    android:text="@string/TypeOfBusiness"
+                    android:layout_height="wrap_content" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/ShopActName"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/CIN"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/GSTINUN"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/ShopPanNumber"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/ShopDesrciption"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/Contact"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/EMAIL"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/Address"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_marginTop="5dp"
+                     android:orientation="vertical"
+                     android:layout_height="wrap_content">
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_name"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_type"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_act_name"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_act_cin"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_gst"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_pan_number"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:id="@+id/txt_shop_description"
+                         android:textColor="@color/color_grey"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_mobile"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_email"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                     <TextView
+                         android:textColor="@color/color_grey"
+                         android:id="@+id/shop_address"
+                         android:layout_margin="5dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+            </LinearLayout>
+
+
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/Owner"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/OwnerName"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shop_owner"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_grey"
+                android:text="@string/CIN"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/Contact"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/shop_owner_number"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_grey"
+                android:text="@string/CIN"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/EMAIL"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/show_owner_email"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_grey"
+                android:text="@string/CIN"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/PanCard"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/ADHAR"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/color_grey"
+
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/MAIN"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/color_grey"
+
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.inevitablesol.www.shopmanagement"
+    android:installLocation="auto"
+    android:versionCode="5"
+    android:versionName="1.5">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".printerClasses.GlobalPool"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label,android:theme">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name=".LonginDetails.ReadSmsForOTP">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".LonginDetails.LandingPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LonginDetails.SigninActivity"
+            android:theme="@style/CustomThem" >
+
+        </activity>
+        <activity
+            android:name=".vendor_module.VendorActivity"
+            android:label="Vendor "
+            android:parentActivityName=".purchase_module.Purchase_Home" />
+        <activity
+            android:name=".vendor_module.AddVendor"
+            android:label="Add Vendor Details"
+            android:parentActivityName=".vendor_module.VendorActivity"
+            android:theme="@style/AppProduct"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".purchase_module.Purchase_Home"
+            android:label="Purchase" />
+        <activity
+            android:name=".product_info.Add_New_product"
+            android:label="Add New Product"
+            android:parentActivityName=".product_info.ProductActivity"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".product_info.NewProduct"
+            android:label="New Product Type"
+            android:parentActivityName=".product_info.Add_New_product" />
+
+        <receiver android:name=".LonginDetails.ReadSmsForOTP">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".vendor_module.View_Vendor"
+            android:label="Vendors"
+            android:parentActivityName=".vendor_module.VendorActivity" />
+        <activity
+            android:name=".vendor_module.SelectedVendorDetails"
+            android:label="Vendor Details"
+            android:parentActivityName=".vendor_module.View_Vendor" />
+        <activity
+            android:name=".vendor_module.EditVendorActivity"
+            android:label="Vendor Details"
+            android:parentActivityName=".vendor_module.VendorActivity" />
+        <activity
+            android:name=".vendor_module.UpdateVendorDetail"
+            android:label="Update Vendor Details"
+            android:parentActivityName=".vendor_module.EditVendorActivity" />
+        <activity
+            android:name=".ItemModule.SelectedItemFromStock"
+            android:label="Add  Item Details"
+            android:parentActivityName=".ItemModule.ViewItems" />
+        <activity android:name=".ItemModule.ViewItemDetail" />
+        <activity
+            android:name=".ItemModule.ViewItems"
+            android:label="View Items"
+            android:parentActivityName=".ItemModule.ViewItemDetail"
+            android:theme="@style/AppThemeItemView" />
+        <activity
+            android:name=".ItemModule.AddToItems"
+            android:label="Add To Items"
+            android:parentActivityName=".ItemModule.ViewItemDetail"
+            android:theme="@style/AppThemeItemView" />
+        <activity
+            android:name=".ItemModule.AddItemToStock"
+            android:label="Add Stock"
+            android:parentActivityName=".ItemModule.AddToItems" />
+        <activity
+            android:name=".MenuItemModule.AddMenuItem"
+            android:label="Add  Menu Item"
+            android:parentActivityName=".MenuItemModule.MenuItemDetailsActivity"
+            android:theme="@style/AppThemeItem" />
+        <activity
+            android:name=".MenuItemModule.RemovingMenuItemActivity"
+            android:label="Remove Item"
+            android:parentActivityName=".MenuItemModule.MenuItemDetailsActivity" />
+        <activity
+            android:name=".MenuItemModule.MenuItemDetailsActivity"
+            android:label="Menu Items" />
+        <activity
+            android:name=".MenuItemModule.ViewMenuActivity"
+            android:label="View Item"
+            android:parentActivityName=".MenuItemModule.MenuItemDetailsActivity" />
+        <activity
+            android:name=".MenuItemModule.AddNewProduct"
+            android:label="Add Product Type"
+            android:parentActivityName=".MenuItemModule.AddMenuItem"
+            android:theme="@style/AppItem" />
+        <activity
+            android:name=".purchase_module.AddPurchaseItem"
+            android:label="Add Purchase"
+            android:parentActivityName=".purchase_module.AddPurchaseItem"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".purchase_module.AddPurchaseDetails"
+            android:label="Purchase Product"
+            android:parentActivityName=".purchase_module.AddPurchaseItem"
+            android:theme="@style/AppThemeItem" />
+        <activity
+            android:name=".purchase_module.PurchaseBillingDetails"
+            android:label=" Purchase Calculation "
+            android:parentActivityName=".purchase_module.AddPurchaseDetails"
+            android:theme="@style/AppThemeItem" />
+        <activity
+            android:name=".billing_module.BillingHistory"
+            android:label="Market Hourz"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".billing_module.BillingDetails"
+            android:label="Make a bill"
+            android:parentActivityName=".billing_module.BillingHistory" />
+        <activity
+            android:name=".billing_module.MakeBill_selectCustomer"
+            android:label="Make a bill"
+            android:parentActivityName=".billing_module.BillingDetails" />
+        <activity
+            android:name=".billing_module.MakeBillingCart"
+            android:label="Select Item "
+            android:parentActivityName=".billing_module.CalculateBillingCart" />
+        <activity
+            android:name=".billing_module.CalculateBillingCart"
+            android:label="Payment Details"
+            android:parentActivityName=".billing_module.MakeBillingCart"
+            android:theme="@style/AppThemeItem" />
+        <activity
+            android:name=".billing_module.Make_InstantBill"
+            android:label="Instant Bill"
+            android:parentActivityName=".billing_module.BillingDetails" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="Setting" />
+        <activity
+            android:name=".settings.AddPaymentLinks"
+            android:label="Add Screens "
+            android:parentActivityName=".settings.SettingsActivity" />
+        <activity android:name=".settings.AddBhim_Screen" />
+        <activity android:name=".settings.AddPaytmScreen" />
+        <activity
+            android:name=".customer_module.CustomerManagement"
+            android:label="Customer" />
+        <activity
+            android:name=".customer_module.AddCustomer"
+            android:label="Add Customer"
+            android:parentActivityName=".customer_module.CustomerManagement"
+            android:theme="@style/AppProduct"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".customer_module.ViewCustomer"
+            android:label="Search Customer Details"
+            android:parentActivityName=".customer_module.CustomerManagement" />
+        <activity
+            android:name=".billing_module.BillingCartItems"
+            android:label="Selected Item"
+            android:parentActivityName=".billing_module.MakeBillingCart"
+            android:theme="@style/AppThemeItem" />
+        <activity
+            android:name=".customer_module.SelectedCustomerDetails"
+            android:label="Customer Details"
+            android:parentActivityName=".customer_module.ViewCustomer" />
+        <activity
+            android:name=".ItemModule.EditItemActivity"
+            android:label="Edit Item"
+            android:parentActivityName=".ItemModule.ViewItems" />
+        <activity
+            android:name=".MenuItemModule.EditMenuItemActivity"
+            android:label="Edit Item"
+            android:parentActivityName=".MenuItemModule.ViewMenuActivity" />
+        <activity
+            android:name=".customer_module.UpdateCustomer"
+            android:label="Update Customer Details"
+            android:parentActivityName=".customer_module.UpdateCustomer" />
+        <activity
+            android:name=".customer_module.UpdateCustomerDetail"
+            android:label="Update Details"
+            android:parentActivityName=".customer_module.UpdateCustomer" />
+        <activity
+            android:name=".purchase_module.PurchaseView"
+            android:label="Purchase View "
+            android:parentActivityName=".purchase_module.PurchaseView" />
+        <activity
+            android:name=".billing_module.Billing_ChoosePaymentMode"
+            android:label="Payment Mode"
+            android:parentActivityName=".billing_module.CalculateBillingCart" />
+        <activity
+            android:name=".billing_module.Billing_OpenPatmScreen"
+            android:label="Paytm"
+            android:parentActivityName=".billing_module.Billing_ChoosePaymentMode" />
+        <activity
+            android:name=".purchase_module.PurchaseView_listItem"
+            android:label="Purchase Details"
+            android:parentActivityName=".purchase_module.PurchaseView" />
+        <activity
+            android:name=".purchase_module.PurchaseView_listImage"
+            android:label="Purchase Details"
+            android:parentActivityName=".purchase_module.PurchaseView_listItem" />
+        <activity
+            android:name=".billing_module.Billing_ChequeDetails"
+            android:label="Cheque Details"
+            android:parentActivityName=".billing_module.Billing_ProceedToPayment"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".billing_module.Billing_EmiDetails"
+            android:label="Emi Details"
+            android:parentActivityName=".billing_module.Billing_ChoosePaymentMode"
+            android:theme="@style/AppItem" />
+        <activity
+            android:name=".billing_module.GetBhimDetails"
+            android:label="Bhim App"
+            android:parentActivityName=".billing_module.Billing_ChoosePaymentMode" />
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_live_vqSrFzHZyAwoZj" />
+
+        <activity
+            android:name=".Quotation.Quotation_custInfo"
+            android:label="Select Customer "
+            android:parentActivityName=".billing_module.BillingDetails"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".Quotation.Quotation_billing_cart"
+            android:label="Make a Cart"
+            android:parentActivityName=".Quotation.Quotation_custInfo" />
+        <activity
+            android:name=".Quotation.Quotation_cart_item"
+            android:label="Quotation Item"
+            android:parentActivityName=".Quotation.Quotation_billing_cart" />
+        <activity
+            android:name=".Quotation.Quatation_taxes"
+            android:label="Make Quotation"
+            android:parentActivityName=".Quotation.Quotation_cart_item" />
+        <activity
+            android:name=".billing_module.Invoice_History"
+            android:label="Invoice History"
+            android:parentActivityName=".billing_module.BillingDetails" />
+        <activity android:name=".RegistrationModule.ShopRegistrationActivity" />
+        <activity
+            android:name=".billing_module.Billing_BankDetails"
+            android:label="Bank Details"
+            android:parentActivityName=".billing_module.Billing_ProceedToPayment" />
+        <activity
+            android:name=".InstantBill_selectedItem"
+            android:label="Selected Item"
+            android:parentActivityName=".billing_module.Make_InstantBill" />
+        <activity
+            android:name=".billing_module.Instant_calculateBilling"
+            android:label="Payment Details"
+            android:parentActivityName=".InstantBill_selectedItem" />
+        <activity
+            android:name=".billing_module.Quotation_History"
+            android:label="Quotation History"
+            android:parentActivityName=".billing_module.BillingDetails"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".ItemModule.Add_Item"
+            android:label="Add Item"
+            android:parentActivityName=".ItemModule.ViewItemDetail" />
+        <activity
+            android:name=".ItemModule.Edit_Items"
+            android:label="Edit Item"
+            android:parentActivityName=".ItemModule.ViewItemDetail" />
+        <activity
+            android:name=".ItemModule.Remove_Items"
+            android:label="Remove Item"
+            android:parentActivityName=".ItemModule.ViewItemDetail" />
+        <activity
+            android:name=".ItemModule.View_Items"
+            android:label="View Items"
+            android:parentActivityName=".ItemModule.ViewItemDetail" />
+        <activity
+            android:name=".billing_module.Billing_OnfailureActivity"
+            android:label="Payment Staus"
+            android:parentActivityName=".billing_module.BillingHistory" />
+        <activity
+            android:name=".billing_module.Billing_OnSuccessCash_PaymentMode"
+            android:label="Payment Status"
+            android:parentActivityName=".billing_module.BillingHistory" />
+        <activity
+            android:name=".billing_module.Paytm_payment_Status"
+            android:label="Payment Status"
+            android:parentActivityName=".billing_module.BillingHistory" />
+        <activity android:name=".billing_module.TestDemo" />
+        <activity
+            android:name=".billing_module.Billing_bankDetailsStatus"
+            android:label="Payment Status"
+            android:parentActivityName=".billing_module.BillingHistory" />
+        <activity
+            android:name=".billing_module.Billing_ChequeDetailsStatus"
+            android:label="Payment Status"
+            android:parentActivityName=".billing_module.BillingHistory"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".billing_module.Billing_EmiDetailsStatus"
+            android:label="Payment Status"
+            android:parentActivityName=".billing_module.BillingHistory" />
+        <activity android:name=".billing_module.Billing_99DetailStatus" />
+        <activity
+            android:name=".expenses.Expenses_Activity"
+            android:label="Expenses" />
+        <activity
+            android:name=".expenses.Add_expenses"
+            android:label="Add Expenses"
+            android:parentActivityName=".expenses.Expenses_Activity"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".expenses.Add_expensesType"
+            android:label="Add Expenses Type"
+            android:parentActivityName=".expenses.Add_expenses" />
+        <activity
+            android:name=".expenses.View_expense"
+            android:label="View Expenses"
+            android:parentActivityName=".expenses.Expenses_Activity"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".expenses.SelectedExpensiveDetails"
+            android:label="Expense Details"
+            android:parentActivityName=".expenses.View_expense" />
+        <activity
+            android:name=".expenses.Exp_Add_RemainingAmount"
+            android:label="Add Remaining Amount"
+            android:parentActivityName=".expenses.SelectedExpensiveDetails" />
+        <activity
+            android:name=".wishList.WishList_Activity"
+            android:label="Wish List" />
+        <activity
+            android:name=".wishList.Add_WishList"
+            android:label="Add Wish List"
+            android:parentActivityName=".wishList.WishList_Activity"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".wishList.View_WishList"
+            android:label="View Wish List"
+            android:parentActivityName=".wishList.WishList_Activity" />
+        <activity
+            android:name=".wishList.SelectedWishDetails"
+            android:label="View Wish List"
+            android:parentActivityName=".wishList.View_WishList" />
+        <activity
+            android:name=".ItemModule.HistoryActivity"
+            android:label="Item History"
+            android:parentActivityName=".ItemModule.ViewItemDetail" />
+        <activity
+            android:name=".ItemModule.History_itemDetails"
+            android:label="Item Details"
+            android:parentActivityName=".ItemModule.HistoryActivity" />
+        <activity
+            android:name=".MenuItemModule.MenuHistoryItem"
+            android:label="Menu Items History"
+            android:parentActivityName=".MenuItemModule.MenuItemDetailsActivity" />
+        <activity
+            android:name=".MenuItemModule.Menu_SelectedItem"
+            android:label="Menu Item"
+            android:parentActivityName=".MenuItemModule.MenuHistoryItem" />
+        <activity
+            android:name=".sales.SalesActivity"
+            android:label="Sales" />
+        <activity
+            android:name=".sales.Sale_Users"
+            android:label=" Sale User"
+            android:parentActivityName=".sales.SalesActivity" />
+        <activity
+            android:name=".sales.Sales_DateTime"
+            android:label=" Sales by Date"
+            android:parentActivityName=".sales.SalesActivity"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".sales.Sales_CustomerActivity"
+            android:label=" Sale by Customer"
+            android:parentActivityName=".sales.SalesActivity" />
+        <activity
+            android:name=".sales.Sales_TotalSales"
+            android:label=" Total Sale"
+            android:parentActivityName=".sales.SalesActivity" />
+        <activity
+            android:name=".sales.Sales_ModeOfPayment"
+            android:label="Mode Of Payment"
+            android:parentActivityName=".sales.SalesActivity" />
+        <activity
+            android:name=".settings.UpdatedShop"
+            android:label="Update Shop Details"
+            android:parentActivityName=".settings.SettingsActivity" />
+        <activity android:name=".printerClasses.PrintBill" />
+        <activity
+            android:name=".printerClasses.Act_BTDiscovery"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:label="@string/actDiscovery_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".sales.Sales_ProductType"
+            android:label="Sale Product Type"
+            android:parentActivityName=".service.Service_Sales_Activity" />
+        <activity
+            android:name=".purchase_module.Purchase_Stock_Storage"
+            android:label="Stock  Storage"
+            android:parentActivityName=".purchase_module.Purchase_Home" />
+        <activity
+            android:name=".billing_module.Selected_InvocieHistory"
+            android:label="Invocie Details"
+            android:parentActivityName=".billing_module.Invoice_History" />
+        <activity
+            android:name=".billing_module.SelectModeOFPaymnet"
+            android:label="@string/PaymentMode"
+            android:parentActivityName=".billing_module.Invoice_Details" />
+        <activity
+            android:name=".billing_module.Selected_Quotation_History"
+            android:label="Quotation  History"
+            android:parentActivityName=".billing_module.Quotation_History" />
+        <activity
+            android:name=".ItemModule.Edit_itemActivity_new"
+            android:label="Edit Item"
+            android:parentActivityName=".ItemModule.Edit_Items" />
+        <activity
+            android:name=".settings.ShopSetting"
+            android:label="Shop"
+            android:parentActivityName=".settings.SettingsActivity" />
+        <activity
+            android:name=".settings.GeneralSetting"
+            android:label="General Setting"
+            android:parentActivityName=".settings.SettingsActivity" />
+        <activity
+            android:name=".settings.Billing_Settings"
+            android:label="Billing Setting"
+            android:parentActivityName=".settings.SettingsActivity" />
+        <activity
+            android:name=".settings.Billing_notifications"
+            android:label="Notifications Setting"
+            android:parentActivityName=".settings.SettingsActivity" />
+        <activity
+            android:name=".settings.CustomAppTheme"
+            android:label="Change App Theme"
+            android:parentActivityName=".settings.GeneralSetting" />
+        <activity
+            android:name=".settings.InventorySetting"
+            android:label="Inventory Setting"
+            android:parentActivityName=".settings.GeneralSetting" />
+        <activity
+            android:name=".settings.PrinterSetting"
+            android:label="Printing Setting"
+            android:parentActivityName=".settings.GeneralSetting" />
+        <activity
+            android:name=".settings.InvocieTheme"
+            android:label="Invoice Theme"
+            android:parentActivityName=".settings.GeneralSetting" />
+        <activity android:name=".billing_module.Billing_BankDetails99" />
+        <activity
+            android:name=".product_info.ProductActivity"
+            android:label="Products"
+            android:parentActivityName=".purchase_module.Purchase_Home" />
+        <activity
+            android:name=".product_info.ProductViewDetails"
+            android:label="Product Details"
+            android:parentActivityName=".product_info.ProductActivity" />
+        <activity
+            android:name=".product_info.Single_product_details"
+            android:label="Item Details"
+            android:parentActivityName=".product_info.ProductViewDetails" />
+        <activity
+            android:name=".MenuItemModule.EditMenu_new"
+            android:label="Edit Menu Item"
+            android:parentActivityName=".MenuItemModule.ViewMenuActivity" />
+        <activity
+            android:name=".billing_module.Invoice_Details"
+            android:label="Invoice Details"
+            android:parentActivityName=".billing_module.Invoice_History" />
+        <activity
+            android:name=".Quotation.Quotation_Details"
+            android:label="Quotation Details"
+            android:parentActivityName=".billing_module.Quotation_History" />
+        <activity
+            android:name=".more.More_Activity"
+            android:label="More" />
+        <activity
+            android:name=".more.More_Notifications"
+            android:label="@string/notification"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".more.More_ContactUS"
+            android:label="Contact Us"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".more.More_AboutUS"
+            android:label="About us"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".more.User_Manual"
+            android:label="@string/UserManual"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".more.More_tutorials"
+            android:label="@string/Tutorails"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".more.More_feedBack"
+            android:label="Feed Back"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".more.More_Policy"
+            android:label="Policy"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".more.More_Services"
+            android:label="Services"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".analysis.Total_Analyasis"
+            android:label="@string/TotalAnalysis"
+            android:parentActivityName=".analysis.Analysis_Activity"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".analysis.Analysis_Activity"
+            android:label="Analysis" />
+        <activity
+            android:name=".analysis.Top_seven_Analysis"
+            android:label="Top Seven Analysis"
+            android:parentActivityName=".analysis.Analysis_Activity" />
+        <activity
+            android:name=".analysis.Top_seven_View"
+            android:label="Analysis View"
+            android:parentActivityName=".analysis.Top_seven_Analysis" />
+        <activity
+            android:name=".analysis.HighestSellingDay"
+            android:label="Highest Selling Days" />
+        <activity android:name=".analysis.HighestPurchaseDay" />
+        <activity android:name=".analysis.HighestCustomerDay" />
+        <activity
+            android:name=".analysis.HighestSaleToCustomer"
+            android:label="Analysis View"
+            android:parentActivityName=".analysis.Top_seven_View" />
+        <activity
+            android:name=".analysis.Customer_Analyasis"
+            android:label="Customer Analysis"
+            android:parentActivityName=".analysis.Analysis_Activity"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".analysis.Customer_weekAnalysis"
+            android:label="@string/ViewAnalysis"
+            android:parentActivityName=".analysis.Customer_Analyasis" />
+        <activity
+            android:name=".analysis.Customer_monthAnalysis"
+            android:label="@string/ViewAnalysis"
+            android:parentActivityName=".analysis.Customer_Analyasis" />
+        <activity
+            android:name=".analysis.Customer_YearAnalysis"
+            android:label="@string/ViewAnalysis"
+            android:parentActivityName=".analysis.Customer_Analyasis" />
+        <activity
+            android:name=".analysis.Total_DayAnalysis"
+            android:label="@string/ViewAnalysis"
+            android:parentActivityName=".analysis.Total_Analyasis" />
+        <activity
+            android:name=".analysis.Total_WeekAnalysis"
+            android:label="@string/ViewAnalysis"
+            android:parentActivityName=".analysis.Total_Analyasis" />
+        <activity
+            android:name=".analysis.Total_MonthAnalysis"
+            android:label="@string/ViewAnalysis"
+            android:parentActivityName=".analysis.Total_Analyasis"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".analysis.Total_YearAnalysis"
+            android:label="@string/ViewAnalysis"
+            android:parentActivityName=".analysis.Total_Analyasis" />
+        <activity android:name=".analysis.RepetativeCustomer" />
+        <activity android:name=".analysis.SellingProduct" />
+        <activity android:name=".report.Report_Activity" />
+        <activity
+            android:name=".report.DayBook_Activity"
+            android:label="@string/DayBook"
+            android:parentActivityName=".report.Report_Activity" />
+        <activity
+            android:name=".report.ReportActivity_Dailog"
+            android:theme="@style/myDailogThem" />
+        <activity
+            android:name=".report.Profit_and_loss"
+            android:label="@string/BusinessStatus"
+            android:parentActivityName=".report.Report_Activity" />
+        <activity android:name=".report.Report_Disount" />
+        <activity
+            android:name=".report.Report_expensive"
+            android:label="@string/TotalExpenses"
+            android:parentActivityName=".report.Report_Activity" />
+        <activity
+            android:name=".report.Report_Purchase"
+            android:label="Total Purchase"
+            android:parentActivityName=".report.Report_Activity" />
+        <activity android:name=".report.Report_TaxRate" />
+        <activity android:name=".report.Report_Tax" />
+        <activity android:name=".report.Report_Sale" />
+        <!-- <activity android:name=".analysis.date.DatePick" /> -->
+        <activity android:name=".report.Report_GST_Activity" />
+        <activity android:name=".account.My_account" />
+        <activity
+            android:name=".account.User_Profile"
+            android:label="User Profile"
+            android:parentActivityName=".account.My_account"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".account.Role_management"
+            android:label="@string/SubUser"
+            android:parentActivityName=".account.My_account" />
+        <activity
+            android:name=".account.SubUsers"
+            android:label="@string/SubUser"
+            android:parentActivityName=".account.SubUsers" />
+        <activity
+            android:name=".account.Add_User"
+            android:label="Add User"
+            android:parentActivityName=".account.SubUsers"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".account.Edit_User"
+            android:label="Edit User"
+            android:parentActivityName=".account.SubUsers"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".account.ViewSubUser"
+            android:label="View Sub Users"
+            android:parentActivityName=".account.Role_management" />
+        <activity
+            android:name=".account.View_User_Deatil"
+            android:label="@string/UserDetaails"
+            android:parentActivityName=".account.ViewSubUser" />
+        <activity
+            android:name=".account.User_shopDetails"
+            android:label="Shop Details"
+            android:parentActivityName=".account.My_account" />
+        <activity
+            android:name=".account.Edit_Document"
+            android:label="@string/EDITDOCUS"
+            android:parentActivityName=".account.Document_Activity" />
+        <activity
+            android:name=".account.Add_Document"
+            android:label="@string/AddNewDocument"
+            android:parentActivityName=".account.Document_Activity" />
+        <activity
+            android:name=".service.Services_Activity"
+            android:label="Service Managment" />
+        <activity
+            android:name=".service.Service_AddServices"
+            android:label="@string/AddService"
+            android:parentActivityName=".service.Service_add_service_landing" />
+        <activity android:name=".service.Service_EditService" />
+        <activity android:name=".service.Service_ViewServices" />
+        <activity android:name=".service.Services_UpdatedServices" />
+        <activity
+            android:name=".account.Document_Activity"
+            android:label="@string/Document"
+            android:parentActivityName=".account.My_account" />
+        <activity
+            android:name=".service.Service_add_service_landing"
+            android:label="Service Managment"
+            android:parentActivityName=".service.Services_Activity" />
+        <activity
+            android:name=".service.Service_Billing"
+            android:label="Customers"
+            android:parentActivityName=".service.Service_Billing" />
+        <activity
+            android:name=".service.Service_Customer_Activity"
+            android:label="Service Customer View"
+            android:parentActivityName=".service.Services_Activity" />
+        <activity
+            android:name=".service.Service_Customer_View"
+            android:label="@string/ViewCustomerDetails"
+            android:parentActivityName=".service.Service_Customer_Activity" />
+        <activity
+            android:name=".service.Service_Customer_Add"
+            android:label="@string/AddCustomer"
+            android:parentActivityName=".service.Service_Customer_Activity"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".service.Service_Customer_Edit"
+            android:label="@string/EditCustomer"
+            android:parentActivityName=".service.Service_Customer_Activity" />
+        <activity
+            android:name=".service.Service_Sales_Activity"
+            android:label="@string/TotalSale"
+            android:parentActivityName=".service.Services_Activity" />
+        <activity
+            android:name=".service.Service_Sales_Total_Sale"
+            android:label="@string/TotalSale"
+            android:parentActivityName=".service.Service_Sales_Activity" />
+        <activity
+            android:name=".service.Service_Sales_DateTimeSale"
+            android:label="@string/SaleByDate"
+            android:parentActivityName=".service.Service_Sales_Activity" />
+        <activity
+            android:name=".service.Service_Sales_PaymentMode"
+            android:label="@string/PaymentMode"
+            android:parentActivityName=".service.Service_Sales_Activity" />
+        <activity
+            android:name=".service.Service_Sales_Customer"
+            android:label="Sale By Customer"
+            android:parentActivityName=".service.Service_Sales_Activity" />
+        <activity android:name=".service.Service_Billing_MakePayment" />
+        <activity
+            android:name=".billing_module.Billing_ProceedToPayment"
+            android:label="@string/PaymentMode"
+            android:parentActivityName=".billing_module.CalculateBillingCart" />
+        <activity
+            android:name=".more.User_Manual_Q_A"
+            android:label="@string/QA"
+            android:parentActivityName=".more.More_Activity" />
+        <activity
+            android:name=".more.M_Hourz_Services"
+            android:label="@string/Services"
+            android:parentActivityName=".more.More_Services" />
+        <activity
+            android:name=".ItemModule.Item_History"
+            android:label="@string/ItemDetails"
+            android:parentActivityName=".ItemModule.HistoryActivity" />
+        <activity
+            android:name=".purchase_module.GetPurchaseImages"
+            android:label="@string/PurchaseImages"
+            android:parentActivityName=".purchase_module.PurchaseView_listItem" />
+        <activity
+            android:name=".expenses.GetExpenseImages"
+            android:label="Expense Images"
+            android:parentActivityName=".expenses.SelectedExpensiveDetails" />
+        <activity android:name=".account.View_Documment" />
+        <activity android:name=".account.Delete_Document" />
+        <activity
+            android:name=".purchase_module.PurchaseImageList"
+            android:label="@string/title_activity_purchase_image_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".settings.Import_Activity"
+            android:label="@string/Import"
+            android:parentActivityName=".settings.SettingsActivity" />
+        <activity
+            android:name=".settings.Import_VendorList"
+            android:label="@string/ImportVendorDeatils"
+            android:parentActivityName=".settings.Import_Activity" />
+        <activity
+            android:name=".settings.Export_Activity"
+            android:label="@string/Export"
+            android:parentActivityName=".settings.SettingsActivity" />
+        <activity
+            android:name=".settings.Import_Customer"
+            android:label="@string/ImportCustDeatils"
+            android:parentActivityName=".settings.Import_Activity" />
+        <activity
+            android:name=".billing_module.Transaction_History"
+            android:label="@string/Transactions"
+            android:parentActivityName=".billing_module.BillingHistory"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".settings.Import_Item"
+            android:label="@string/ImportItem"
+            android:parentActivityName=".settings.Import_Activity" />
+        <activity
+            android:name=".settings.Import_MenuItem"
+            android:label="@string/ImportMenu"
+            android:parentActivityName=".settings.Import_Activity" />
+        <activity
+            android:name=".purchase_module.BarcodeProduct"
+            android:label="@string/PurchaseProduct"
+            android:parentActivityName=".purchase_module.AddPurchaseItem" />
+        <activity android:name=".Billing_paidAmountSuccess" />
+        <activity
+            android:name=".billing_module.DuePayment_BankDeatils"
+            android:label="@string/ToBankAccount"
+            android:parentActivityName=".billing_module.SelectModeOFPaymnet" />
+        <activity
+            android:name=".billing_module.Due_paymnetEmi"
+            android:label="@string/EMI"
+            android:parentActivityName=".billing_module.SelectModeOFPaymnet"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".billing_module.DuePayment_ChequeDeatils"
+            android:label="@string/ChequePayment"
+            android:parentActivityName=".billing_module.SelectModeOFPaymnet"
+            android:theme="@style/AppProduct" />
+        <activity
+            android:name=".billing_module.GetBhimDetails_AddRemaiming"
+            android:label="BHIM"
+            android:parentActivityName=".billing_module.SelectModeOFPaymnet" />
+        <activity
+            android:name=".billing_module.DuePayment_BhimDetails"
+            android:label="BHIM"
+            android:parentActivityName=".billing_module.SelectModeOFPaymnet" />
+        <activity
+            android:name=".billing_module.DuePayment_Paytm"
+            android:label="Paytm"
+            android:parentActivityName=".billing_module.SelectModeOFPaymnet" />
+    </application>
+
+</manifest>

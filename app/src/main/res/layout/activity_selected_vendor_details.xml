@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:background="@drawable/rectangleshape"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mustardbrown">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Shop Name :"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Name:"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Mobile :"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Contact Person :"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Address :"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="@string/placeOfSuppler"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="GST Status :"
+                        android:id="@+id/textView21" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="GST IN :"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Created By :"
+                        android:id="@+id/textView23" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Vendor ID :"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Created Date :"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:letterSpacing="0.05"
+                        android:text="Email :"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/txt_view_shopName"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text=""
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_weight="2"
+                        android:id="@+id/txt_view_vendorName"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text=""
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/txt_view_v_contact"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text=""
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+
+                        android:id="@+id/txt_view_v_contactPerson"
+                        android:layout_height="wrap_content"
+
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text=""
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_view_v_address"
+                        android:textColor="@color/color_grey"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_view_placeofsuppier"
+                        android:textColor="@color/color_grey"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_view_v_GstStatus"
+                        android:textColor="@color/color_grey"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:id="@+id/txt_view_v_GSTNO"
+                        android:textColor="@color/color_grey"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_view_v_CreatedBy"
+                        android:textColor="@color/color_grey"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:id="@+id/txt_view_v_id"
+                        android:textColor="@color/color_grey"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_view_v_CreatedDate"
+                        android:textColor="@color/color_grey"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_view_v_email"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text=""
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_gravity="left"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:letterSpacing="0.05"-->
+                <!--android:text="Email :"-->
+                <!--/>-->
+          <!---->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:id="@+id/v_call"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_phone"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:id="@+id/v_sms"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_action_sms"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/v_mail"
+                    android:src="@drawable/ic_action_mail"
+                    android:layout_height="wrap_content" />
+
+
+
+                <android.support.v7.widget.AppCompatButton
+                  android:layout_width="wrap_content"
+                   android:text="Remove"
+                  android:id="@+id/remove_vendor"
+                  android:textAllCaps="false"
+                   android:textColor="@color/white"
+                  android:backgroundTint="@color/colorPrimary"
+                  android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView >
+</LinearLayout>
+

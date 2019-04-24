@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.mypoolin:sdk-pg-lite-0.0.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-pg-lite-0.0.7.aar/8f6fb76a446307ca8b16bef46d9eb137/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-pg-lite-0.0.7.aar/8f6fb76a446307ca8b16bef46d9eb137/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mypoolin/sdk-pg-lite/0.0.7/70ac55a25c0677c4cb2c97e255fa9c785bd764fa/sdk-pg-lite-0.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

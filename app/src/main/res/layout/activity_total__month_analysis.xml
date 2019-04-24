@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_customer_week_analysis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.analysis.Customer_weekAnalysis">
+
+    <include layout="@layout/view_line"></include>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Month"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_month"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/Date"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/rectangleshape"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/TotalAnalysis"
+                android:layout_gravity="center"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+            <include layout="@layout/view_line"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="wrap_content"
+                    app:seriesType="bar"
+                    android:layout_height="match_parent"
+                    android:id="@+id/graph" />
+
+            </LinearLayout>
+
+
+            <include  layout="@layout/view_line">
+            </include>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/color_grey"
+                android:text="Analysis Summary"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView32" />
+
+            <include layout="@layout/view_line"></include>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:text="Total"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:textColor="@color/color_grey"-->
+                <!--android:layout_height="wrap_content" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Sales"
+                        android:textColor="@color/green"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Purchase"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Expense"
+                        android:textColor="@color/red"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:text="₹"
+                             android:layout_gravity="bottom"
+                             android:textColor="@color/color_grey"
+                             android:layout_height="wrap_content" />
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:id="@+id/txt_sale"
+                             android:text="Sale"
+                             android:textColor="@color/color_grey"
+                             android:layout_height="wrap_content" />
+
+                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:layout_gravity="bottom"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Purchase"
+                            android:id="@+id/txt_purchase"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:layout_gravity="bottom"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Expense"
+                            android:id="@+id/txt_expense"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+            <include layout="@layout/view_line">
+
+            </include>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/green"
+                        android:text="@string/HightSalingWeek"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:text="@string/HightPurchaseWeek"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/red"
+                        android:text="@string/HightSaleMonth"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/month_saleDay"
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/color_grey"
+                        android:text="Day"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/month_purchaseDay"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/color_grey"
+                        android:text="Day"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/month_expday"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/color_grey"
+                        android:text="Day"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:text="₹"
+                             android:layout_gravity="bottom"
+                             android:textColor="@color/color_grey"
+                             android:layout_height="wrap_content" />
+                         <TextView
+                             android:id="@+id/saleAmount"
+                             android:layout_width="wrap_content"
+                             android:textColor="@color/color_grey"
+                             android:text="@string/Amount"
+                             android:layout_height="wrap_content" />
+
+                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:layout_gravity="bottom"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/purchaseAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/Amount"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="₹"
+                            android:layout_gravity="bottom"
+                            android:textColor="@color/color_grey"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/expamount"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/color_grey"
+                            android:text="@string/Amount"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--</ScrollView>-->
+
+</LinearLayout>

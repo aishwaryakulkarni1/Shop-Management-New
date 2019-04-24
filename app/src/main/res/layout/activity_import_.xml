@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context="com.inevitablesol.www.shopmanagement.settings.Import_Activity">
+
+    <include layout="@layout/view_line"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/ll_imp_vendorList"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/ImportVendorDeatils"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/li_custImport"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/ImportCustDeatils"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/view_line"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/li_itemList"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/ImportItemDeatils"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <include layout="@layout/view_line"></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/li_menuItem"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/ImportMenu"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+
+    </LinearLayout>
+</LinearLayout>

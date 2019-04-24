@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/view_line">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Month :"
+                android:textColor="@color/color_grey"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Month"
+                android:id="@+id/bill_curruntDate"
+                android:textColor="@color/color_grey"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/total_imgfromDate"
+                android:src="@drawable/ic_date_range"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/view_line"></include>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Tax Rate    %"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+            <include layout="@layout/view_vertical_line"></include>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Taxable value"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="CGST"
+                android:textColor="@color/red"
+                android:textAlignment="center"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="SGST"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="IGST"
+                android:textColor="@color/green"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+        <include layout="@layout/view_line"></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:padding="10dp"
+                />
+            <include layout="@layout/view_vertical_line"></include>
+
+            <TextView
+                android:id="@+id/tax_value_0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/cgst_0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/sgst_0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/igst_0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="0.25"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <include layout="@layout/view_vertical_line"></include>
+
+            <TextView
+                android:id="@+id/tax_value_025"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/cgst_025"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/sgst_025"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/igst_025"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="3"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <include layout="@layout/view_vertical_line"></include>
+
+            <TextView
+                android:id="@+id/tax_value_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/cgst_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/sgst_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/igst_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="5"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <include layout="@layout/view_vertical_line"></include>
+
+            <TextView
+                android:id="@+id/tax_value_5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/cgst_5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/sgst_5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/igst_5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="12"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <include layout="@layout/view_vertical_line"></include>
+
+            <TextView
+                android:id="@+id/tax_value_12"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/cgst_12"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/sgst_12"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/igst_12"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="18"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <include layout="@layout/view_vertical_line"></include>
+
+            <TextView
+                android:id="@+id/tax_value_18"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/cgst_18"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/sgst_18"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/igst_18"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="28"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                />
+            <include layout="@layout/view_vertical_line"></include>
+
+            <TextView
+                android:id="@+id/tax_value_28"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/cgst_28"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/sgst_28"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+
+            <TextView
+                android:id="@+id/igst_28"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_grey"
+                />
+        </LinearLayout>
+        <include layout="@layout/view_line"></include>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Total Amount"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="₹"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/exp_view_totalExp"
+                        android:text="@string/Amount"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Download Report"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/sale_download_product"
+                    android:src="@drawable/download"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

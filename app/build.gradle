@@ -1,0 +1,68 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "com.inevitablesol.www.shopmanagement"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 5
+        versionName "1.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/LeopardProwessSdkV-1.1.9.jar')
+    compile files('libs/ImageSupport-V1.5.jar')
+    compile project(':sdkui')
+
+    compile 'com.android.support:appcompat-v7:28.0.0'
+    compile 'com.android.support:design:28.0.0'
+    compile 'com.android.support:cardview-v7:28.0.0'
+    compile 'com.android.support:recyclerview-v7:28.0.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'id.zelory:compressor:1.0.4'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.razorpay:checkout:1.4.1'
+    compile 'org.apache.poi:poi:3.17'
+    compile 'com.itextpdf:itextpdf:5.0.6'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'com.jjoe64:graphview:4.2.1'
+    compile 'com.android.support:support-v4:28.0.0'
+    compile 'com.github.twinkle942910:monthyearpicker:0.0.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.google.firebase:firebase-storage:9.2.1'
+
+    compile 'com.google.firebase:firebase-auth:9.2.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.pddstudio:urlshortener:1.0.2'
+    compile 'com.koushikdutta.ion:ion:2.+'
+
+    compile 'com.mypoolin:sdk-pg-lite:0.0.7'
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

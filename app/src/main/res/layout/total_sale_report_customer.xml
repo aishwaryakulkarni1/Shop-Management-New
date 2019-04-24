@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/rectangleshape"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Total Sale Report"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="1dp"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/shape_search"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content">
+
+                    <EditText android:id="@+id/input_searchCusttomer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:drawableRight="@drawable/search"
+                        android:hint="Customer Name" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list_customerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:fastScrollAlwaysVisible="true"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_search" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Name :"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_name"
+                    android:text="Name"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Mobile :"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txt_mobile"
+                    android:text="Name"
+                    android:textColor="@color/color_grey"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:id="@+id/total_SaleRadio"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        style="@style/RadioButton"
+                        android:text="From"
+                        android:id="@+id/total_from"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content" />
+
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        style="@style/RadioButton"
+                        android:id="@+id/total_month"
+                        android:text="Month"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content" />
+
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:layout_width="wrap_content"
+                        style="@style/RadioButton"
+                        android:id="@+id/total_last"
+                        android:text="Till"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1.30"
+                        android:text="From"
+                        android:id="@+id/total_fromdate"
+                        android:layout_gravity="center"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/total_imgfromDate"
+                        android:src="@drawable/ic_date_range"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="To"
+                        android:layout_gravity="center"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="To"
+                        android:id="@+id/total_toDate"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/total_todate_image"
+                        android:src="@drawable/ic_date_range"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Month"
+                        android:id="@+id/t_month"
+                        android:layout_gravity="center"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/total_imgMonth"
+                        android:src="@drawable/ic_date_range"
+                        android:layout_height="wrap_content" />
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:text="Year"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:layout_height="wrap_content" />-->
+                    <!--<TextView-->
+                        <!--android:layout_width="0dp"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="Year"-->
+                        <!--android:id="@+id/t_year"-->
+                        <!--android:layout_marginLeft="10dp"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:textColor="@color/color_grey"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:id="@+id/total_imgYear"-->
+                        <!--android:src="@drawable/ic_date_range"-->
+                        <!--android:layout_height="wrap_content" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="Till"
+                        android:id="@+id/txt_tillDate"
+                        android:layout_gravity="center"
+                        android:textColor="@color/color_grey"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/total_SaleRadioGruop"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/color_grey"
+            android:text="Please Select File Format"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/total_Sale"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/pdf"
+                android:text=".pdf"
+                style="@style/RadioButton"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:id="@+id/xls"
+                android:text=".xls"
+                android:checked="true"
+                style="@style/RadioButton"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:text="@string/Download"
+            android:id="@+id/total_saleDownload"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_height="30dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/View"
+            android:id="@+id/total_saleView"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_height="30dp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:text="@string/Share"
+            android:id="@+id/report_share"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_height="30dp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:text="@string/Print"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/dialogButtonCancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/color_grey"
+            android:text="Cancel" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+

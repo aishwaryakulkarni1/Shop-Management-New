@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_width="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown" />
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mustardbrown" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="30dp">
+
+
+            <!--<View-->
+            <!--android:id="@+id/myRectangleView"-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@drawable/rectangle"/>-->
+
+
+            <LinearLayout
+                android:id="@+id/ll_userinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangleshape"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Product type Label -->
+
+
+
+                <!-- Brand name Label -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint=" Item Name"
+                        android:inputType="text"
+                        android:textColor="@color/color_grey" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <!-- Item PRODUCT COMPANY -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_productType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint="PRODUCT TYPE"
+                        android:inputType="text"
+                        android:textColor="@color/color_grey" />
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- Original PRODUCT OWNER /AUTHOR -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_mrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint="MRP"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/color_grey" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_unitPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint="Base Price"
+                        android:inputType="text"
+                        android:textColor="@color/color_grey" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_Discount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint="Discount"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/color_grey" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_totalitemPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint="Total Price"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/color_grey" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <!-- SPECIFICATION -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_specification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint="SPECIFICATION"
+                        android:inputType="text"
+                        android:textColor="@color/color_grey" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- HSN/SAN CODE -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_hsn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:enabled="false"
+                        android:hint="HSN/SAN CODE"
+                        android:inputType="text"
+                        android:textColor="@color/color_grey" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- PRODUCT COMPANY -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:background="@drawable/bottomline"
+                        android:hint="PRODUCT COMPANY"
+                        android:inputType="text"
+                        android:textColor="@color/color_grey" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <!-- STORAGE QTY -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_storage_qty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint="STORAGE QTY"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:textColor="@color/color_grey" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/color_grey"
+                        android:letterSpacing="0.05"
+                        android:text="GST %"
+                        />
+
+
+
+                    <Spinner
+                        android:id="@+id/et_gstpercentage"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="2"
+                        android:background="@color/colorPrimary"
+                        android:overlapAnchor="true">
+
+                    </Spinner>
+                    </LinearLayout>
+
+
+                    <!-- ITEM PRICE -->
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="20dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/input_item_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottomline"
+                        android:hint="ITEM PURCHASE  PRICE"
+                        android:inputType="text"
+                        android:enabled="true"
+                        android:textColor="@color/color_grey" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:layout_width="match_parent"
+                        android:id="@+id/update_itemDetails"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:text="Save Changes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/borderless_button"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
+    </LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_rp_createdDate"
+            android:layout_width="0dp"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="created date"
+            />
+
+        <TextView
+            android:id="@+id/tv_rp_taxvalue"
+            android:layout_width="0dp"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="item"
+            />
+
+        <TextView
+            android:id="@+id/tv_rp_totalgst"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="mrp"
+            />
+
+        <TextView
+            android:id="@+id/tv_rp_totalAmount"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="payment"
+            />
+
+        <TextView
+            android:id="@+id/tv_rp_balance"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="payment"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/mustardbrown"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

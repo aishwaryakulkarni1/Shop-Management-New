@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "2753585412",
+    "firebase_url": "https://shopmanagment-edfda.firebaseio.com",
+    "project_id": "shopmanagment-edfda",
+    "storage_bucket": "shopmanagment-edfda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2753585412:android:03c13d8b646f6b44",
+        "android_client_info": {
+          "package_name": "com.inevitablesol.www.shopmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2753585412-6ai6tsr7nsdqhpre3igfrc4guf0sc0q4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUfujspFOK6lB3X0dT4Ns6sFMrL5PB9S0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

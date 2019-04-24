@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user__profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.account.User_Profile">
+
+    <include  layout="@layout/view_line">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Profile Detalis"
+            android:gravity="center"
+            android:textColor="@color/white"
+
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <include  layout="@layout/view_line">
+    </include>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rectangleshape"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="invisible"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+
+            android:layout_height="wrap_content">
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:id="@+id/spnn_role"
+                android:overlapAnchor="true"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </LinearLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_margin="10dp"
+            android:id="@+id/imageProfile"
+             android:background="@color/color_grey"
+            android:layout_height="150dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/UserType"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/txt_userType"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/UserType"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_name"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:hint="Name"
+                android:textColor="@color/color_grey"
+                android:inputType="textCapWords"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Mobile"
+                android:inputType="phone"
+                android:enabled="false"
+                android:textColor="@color/color_grey"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_mobile" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="@string/EMAILID"
+                android:enabled="false"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/color_grey"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_email" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:hint="@string/DateOfBitrh"
+                    android:enabled="false"
+                    android:singleLine="true"
+                    android:textColor="@color/color_grey"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColorHint="@color/color_grey"
+                    android:id="@+id/user_dateofbirth"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/img_dateofBirth"
+                android:layout_width="wrap_content"
+                android:fitsSystemWindows="true"
+                android:background="@drawable/ic_date_range"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <android.support.design.widget.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:hint="@string/EmloyeeCode"
+                 android:enabled="false"
+                 android:singleLine="true"
+                 android:textColor="@color/color_grey"
+                 android:backgroundTint="@color/colorPrimary"
+                 android:textColorHint="@color/color_grey"
+                 android:id="@+id/user_empcode"
+                 android:layout_height="wrap_content" />
+
+         </android.support.design.widget.TextInputLayout>
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <android.support.design.widget.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:hint="@string/Created_on"
+                 android:enabled="false"
+                 android:singleLine="true"
+                 android:textColor="@color/color_grey"
+                 android:backgroundTint="@color/colorPrimary"
+                 android:textColorHint="@color/color_grey"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/user_createdOn" />
+
+         </android.support.design.widget.TextInputLayout>
+
+         <android.support.design.widget.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <android.support.design.widget.TextInputEditText
+                 android:layout_width="match_parent"
+                 android:hint="@string/updatedBy"
+                 android:enabled="false"
+                 android:singleLine="true"
+                 android:textColor="@color/color_grey"
+                 android:backgroundTint="@color/colorPrimary"
+                 android:textColorHint="@color/color_grey"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/user_createdby" />
+
+         </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/user_save"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

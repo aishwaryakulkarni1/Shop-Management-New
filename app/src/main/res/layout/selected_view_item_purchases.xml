@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:paddingRight="11dp">
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:id="@+id/purches_delete_item"
+            android:theme="@style/MyCheckBox"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/tv_itemname"
+            android:layout_width="0dp"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Item name"
+            />
+
+        <TextView
+            android:id="@+id/tv_itemQty"
+            android:layout_width="0dp"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            />
+
+
+        <TextView
+            android:id="@+id/tv_itemUnitPrice"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/tv_itemPrice"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:textColor="@color/color_grey"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/mustardbrown"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

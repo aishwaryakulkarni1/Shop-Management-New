@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#111111"
+    android:layout_height="match_parent">
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mustardbrown">
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:id="@+id/take_screen"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Bhim Screen Shot"
+            android:layout_height="30dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:id="@+id/bhimScreen"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:id="@+id/uploadBhi_Screen"
+            android:text="Upload Image"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

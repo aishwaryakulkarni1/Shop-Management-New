@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context="com.inevitablesol.www.shopmanagement.purchase_module.PurchaseView">
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:background="@drawable/squareshape"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="0dp"
+            android:id="@+id/spnn_product"
+            android:overlapAnchor="true"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:popupBackground="#d19400"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/squareshapegrey"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText android:id="@+id/input_productname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:drawableRight="@drawable/search"
+                    android:hint="Product Name" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <include layout="@layout/view_line"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Product Name"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/colorPrimary"
+            android:text="HSN"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/product_ViewRecycle"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
