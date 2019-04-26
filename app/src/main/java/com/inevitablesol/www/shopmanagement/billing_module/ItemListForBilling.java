@@ -85,22 +85,74 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
     @Override
     public void onBindViewHolder(final ItemListForBilling.ViewHolder viewHolder, final int i)
     {
-
-
         final ItemDetalisClass list = listData.get(i);
-
-
-
-
         viewHolder.tv_itemname.setText(String.valueOf(list.getItem_name()));
 
         viewHolder.tv_mrp.setText(String.valueOf(list.getTotalPrice()));
         viewHolder.sumValue.setText(String.valueOf(list.getSelectd_qty()));
         viewHolder.txt_shortCut.setText(list.getShortcut());
 
+        viewHolder.tv_mrp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onBindViewHolder: Updated Object for price "+list.toString());
+                final Dialog dialog = new Dialog(context);
+                dialog.setContentView(R.layout.edit_unit_price);
+                final TextInputEditText txtPrice = dialog.findViewById(R.id.new_price);
+
+                Log.d(TAG, "openDialog: price"+txtPrice);
+                dialog.setCancelable(false);
+//                txtPrice.addTextChangedListener(new TextWatcher() {
+//                    @Override
+//                    public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//
+//                    }
+//
+//                    @Override
+//                    public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+//
+//                    }
+//
+//                    @Override
+//                    public void afterTextChanged(Editable editable) {
+//
+//                        String price = txtPrice.getText().toString().trim();
+//
+//                    }
+//                });
+
+                AppCompatButton addPrice = dialog.findViewById(R.id.add_unit_price);
+                addPrice.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        String u_price = txtPrice.getText().toString().trim();
+//                        int unit_Price = Integer.parseInt(u_price);
+
+                        viewHolder.tv_mrp.setText(u_price);
+                        ItemDetalisClass list = listData.get(i);
+
+//                        list.setUpdated_unitPrice(u_price);
+//                        String unitPrice = list.getUpdated_unitPrice();
+                        list.setUnit_price(u_price);
+                        dialog.cancel();
+                    }
+                });
 
 
-             viewHolder.sumValue.setOnClickListener(new View.OnClickListener() {
+                AppCompatButton cancel=(AppCompatButton)dialog.findViewById(R.id.dis_cancel);
+                cancel.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View v) {
+
+                        dialog.dismiss();
+                    }
+                });
+                dialog.show();
+            }
+        });
+
+        viewHolder.sumValue.setOnClickListener(new View.OnClickListener() {
                  @Override
                  public void onClick(View v)
                  {
@@ -113,14 +165,12 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                      final TextInputEditText texxtqty=(TextInputEditText)dialog.findViewById(R.id.more_qty);
 
                      final  TextView itemName=(TextView)dialog.findViewById(R.id.itemName);
-                     final  TextView  UnitPrice=(TextView)dialog.findViewById(R.id.unitPrice);
+                     final TextView  UnitPrice=(TextView)dialog.findViewById(R.id.unitPrice);
                      final  TextView  dis_inRepees=(TextView)dialog.findViewById(R.id.dis_inRepees);
                      final TextView  discountedPrice=(TextView)dialog.findViewById(R.id.discoutedPrice);
                      final TextView  finalPrice=(TextView)dialog.findViewById(R.id.finalprice);
 
                      final  TextView txt_price=(TextView)dialog.findViewById(R.id.txt_price);
-
-
 
                      final  TextView txt_mearmentUnit=(TextView)dialog.findViewById(R.id.measurementUnit);
                      final Spinner     sp_unit=(Spinner)dialog.findViewById(R.id.sp_measurementUnit);
@@ -129,10 +179,23 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                      String item_id = list.getItem_id();
                      String item_name = list.getItem_name();
                      itemName.setText(item_name);
-                     UnitPrice.setText(list.getUnit_price());
+//                     String  unit_price=null;
+//                     if(list.getUnit_price().equalsIgnoreCase(list.getUpdated_unitPrice())){
+                         UnitPrice.setText(list.getUnit_price());
+//                         unit_price = list.getUnit_price();
+//                     }
+//                     else
+//                     {
+//                         UnitPrice.setText(list.getUpdated_unitPrice());
+//                         unit_price = list.getUpdated_unitPrice();
+//                     }
+
                      dis_inRepees.setText(list.getDiscount());
                      discountedPrice.setText(String.valueOf(Double.parseDouble(list.getUnit_price())-Double.parseDouble(list.getDiscount())));
-                     finalPrice.setText(list.getTotalPrice());
+
+//                     if()
+                     String uPrice = UnitPrice.getText().toString();
+                     finalPrice.setText(uPrice);
                      txt_mearmentUnit.setText(list.getUnit());
 
                      try {
@@ -220,26 +283,34 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                      add.setOnClickListener(new View.OnClickListener()
                      {
                          @Override
-                         public void onClick(View v) 
+                         public void onClick(View v)
                          {
                              Log.d(TAG, "onClick: ");
 
                              try
                              {
                                  String item_id = list.getItem_id();
-                                 String totalPrice = list.getTotalPrice();
+                                 String totalPrice = list.getUnit_price();
+                                 list.setTotalPrice(totalPrice);
+                                 String total_price = list.getTotalPrice();
                                  String  stockQty=list.getItem_qty();
                                  String  dicount=list.getDiscount();
                                  String  gst=list.getGst_per();
-                                 String  unit_price=list.getUnit_price();
+
                                  String purchase_price=list.getItem_purchase();
                                  String status=list.getStatus();
                                  String changedUnit=sp_unit.getSelectedItem().toString().trim();
 
                                  String qty = texxtqty.getText().toString().trim();
+                                 String  unit_price;
+//                                 if(list.getUnit_price().equalsIgnoreCase(list.getUpdated_unitPrice())){
+                                     unit_price  =list.getUnit_price();
+//                                 }
+//                                 else
+//                                 {  unit_price = list.getUpdated_unitPrice();}
                                  Log.d("qty", stockQty);
 
-                                 Log.d("totalPrice", totalPrice);
+                                 Log.d("total_price", total_price);
                                  Log.d("purchase_price",purchase_price);
                                  Log.d("GST",gst);
                                  Log.d("discount",dicount);
@@ -254,7 +325,7 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
 //                                 quantity++;
                                  if(quantity<=Integer.parseInt(stockQty) || status.equalsIgnoreCase("infinite"))
                                  {
-                                     //Double.parseDouble(totalPrice) * quantity;
+                                     //Double.parseDouble(total_price) * quantity;
                                      viewHolder.sumValue.setText(String.valueOf(quantity));
 
                                      try
@@ -262,7 +333,7 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                                          ItemDetalisClass list = listData.get(i);
                                          list.setSelectd_qty(String.valueOf(quantity));
 
-                                         addItem(item_id,String.valueOf(quantity),totalPrice,dicount,gst,totalAmont,unit_price,changedUnit);
+                                         addItem(item_id,String.valueOf(quantity),total_price,dicount,gst,totalAmont,unit_price,changedUnit);
                                      } catch (NumberFormatException e)
                                      {
                                          e.printStackTrace();
@@ -321,10 +392,13 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                         // String unitChar = txt_mearmentUnit.getText().toString().substring(0, 1);
                         // String SubUnit = position;
                          String joinString = unitChar.concat(position);
-                         double discountedPrice=Double.parseDouble(list.getUnit_price())-Double.parseDouble(list.getDiscount());
+                         String  unit_price =list.getUnit_price();
+                         list.setTotalPrice(unit_price);
+                         String total_price = list.getTotalPrice();
+                         double discountedPrice=Double.parseDouble(unit_price)-Double.parseDouble(list.getDiscount());
                          Log.d(TAG, "onClick: String " + joinString);
                          Log.d(TAG, "onItemSelected: DisCountedPrice "+discountedPrice);
-                         totalAmont=getCalulatedAmount(joinString,Double.parseDouble(list.getTotalPrice()),quantity);
+                         totalAmont=getCalulatedAmount(joinString,Double.parseDouble(total_price),quantity);
                          Log.d(TAG, "onItemSelected: totalAmount"+totalAmont);
                          totalTaxableValue=getCalulatedAmount(joinString,discountedPrice,quantity);
                          Log.d(TAG, "onItemSelected: Taxable Value"+totalTaxableValue);
@@ -341,7 +415,7 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                  }
              });
 
-        
+
 
         ((ItemListForBilling.ViewHolder) viewHolder).addItem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -352,21 +426,27 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
 
                    String item_id = list.getItem_id();
                    String item_name = list.getItem_name();
-                   String totalPrice = list.getTotalPrice();
+                   String totalPrice = list.getUnit_price();
+                   list.setTotalPrice(totalPrice);
+                   String total_price = list.getTotalPrice();
                    String  stockQty=list.getItem_qty();
                    String  dicount=list.getDiscount();
                    String  gst=list.getGst_per();
-                   String  unit_price=list.getUnit_price();
                    String purchase_price=list.getItem_purchase();
                    String status=list.getStatus();
                    String changedUnit=list.getUnit();
-
+                   String  unit_price=null;
+//                    if(list.getUnit_price().equalsIgnoreCase(list.getUpdated_unitPrice())){
+                        unit_price  =list.getUnit_price();
+//                    }
+//                    else
+//                    {  unit_price = list.getUpdated_unitPrice();}
 
                    String qty = viewHolder.sumValue.getText().toString().trim();
                    Log.d("qty", stockQty);
                    Log.d("item",item_name);
                    Log.d("item_id", item_id);
-                   Log.d("totalPrice", totalPrice);
+                   Log.d("totalPrice", total_price);
                    Log.d("purchase_price",purchase_price);
                    Log.d("GST",gst);
                    Log.d("discount",dicount);
@@ -378,7 +458,7 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                    quantity++;
                    if(quantity<=Integer.parseInt(stockQty) || status.equalsIgnoreCase("infinite"))
                    {
-                       double totalAmont = Double.parseDouble(totalPrice) * quantity;
+                       double totalAmont = Double.parseDouble(total_price) * quantity;
                        Log.d("totalAount", String.valueOf(totalAmont));
                        viewHolder.sumValue.setText(String.valueOf(quantity));
                        ItemDetalisClass list = listData.get(i);
@@ -390,7 +470,7 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
 
                        try
                        {
-                           addItem(item_id,String.valueOf(quantity),totalPrice,dicount,gst,totalAmont, unit_price, changedUnit);
+                           addItem(item_id,String.valueOf(quantity),total_price,dicount,gst,totalAmont, unit_price, changedUnit);
 
                        } catch (NumberFormatException e)
                        {
@@ -426,22 +506,29 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
 
                      String item_id = list.getItem_id();
                      String p_name = list.getItem_name();
-                     String totalPrice = list.getTotalPrice();
+                     String totalPrice = list.getUnit_price();
+                     list.setTotalPrice(totalPrice);
+                     String total_price = list.getTotalPrice();
                      String  stockQty=list.getItem_qty();
                      String  dicount=list.getDiscount();
                      String  gst=list.getGst_per();
-                     String  unit_price=list.getUnit_price();
+
                      String status=list.getStatus();
                      String changedUnit=list.getUnit();
 
                      Log.d("stockQty",stockQty);
 
                      String purchase_price= list.getItem_purchase();
-
+                     String  unit_price=null;
+//                     if(list.getUnit_price().equalsIgnoreCase(list.getUpdated_unitPrice())){
+                         unit_price  =list.getUnit_price();
+//                     }
+//                     else
+//                     {  unit_price = list.getUpdated_unitPrice();}
 
                      Log.d("qty", stockQty);
                      Log.d("item_id", item_id);
-                     Log.d("totalPrice", totalPrice);
+                     Log.d("totalPrice", total_price);
                      Log.d("purchase_price",purchase_price);
                      Log.d("GST",gst);
                      Log.d("discount",dicount);
@@ -458,10 +545,10 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                          ItemDetalisClass list = listData.get(i);
                          list.setSelectd_qty(String.valueOf(quantity));
 
-                         double totalAmont=Double.parseDouble(totalPrice)*quantity;
+                         double totalAmont=Double.parseDouble(total_price)*quantity;
                          Log.d("totalAount", String.valueOf(totalAmont));
                          totalTaxableValue=quantity*((Double.parseDouble(unit_price)-Double.parseDouble(dicount)));
-                         addItem(item_id,String.valueOf(quantity),totalPrice,dicount,gst,totalAmont, unit_price, changedUnit);
+                         addItem(item_id,String.valueOf(quantity),total_price,dicount,gst,totalAmont, unit_price, changedUnit);
                        //  sqlDataBase.updateQty(item_id, String.valueOf(quantity), String.valueOf(totalAmont));
                          getTotalQunatity();
 //                         double amount=sqlDataBase.getTotalAmount();
