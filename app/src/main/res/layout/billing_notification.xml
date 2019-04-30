@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/billing_notifications"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context="com.inevitablesol.www.shopmanagement.settings.Billing_notifications">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="1dp"></View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details for Sending Notification"
+            android:textColor="@color/color_grey"
+            android:gravity="center"
+            android:textSize="@dimen/cb_sixteen"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_margin="35dp">-->
+    `
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/cb_fourteenScaled"
+            android:text="Main User Mobile Details:"
+            android:textColor="@color/colorPrimary" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/mobilenumber"
+                android:layout_width="match_parent"
+                android:hint="Mobile Number "
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="@color/color_grey"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="40dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/cb_fourteenScaled"
+                android:text="Main User Email Id:"
+                android:textColor="@color/colorPrimary"/>
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/color_grey"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColorHint="@color/color_grey"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <!--<android.support.v7.widget.AppCompatButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:text="Save Details"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:padding="5dp"-->
+            <!--android:id="@+id/add_unit_price"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:layout_height="40dp" />-->
+        <android.support.v7.widget.AppCompatButton
+            android:layout_margin="10dp"
+            android:id="@+id/save_details"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="Save details"
+            android:layout_height="30dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

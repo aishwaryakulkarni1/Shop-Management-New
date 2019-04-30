@@ -128,13 +128,16 @@ public class CalculateBillingCart extends AppCompatActivity implements View.OnCl
 
         this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
+        String gstStatus = String.valueOf(globalPool.getGst_status());
+
+
         try
         {
 
-            if(globalPool!=null)
+            if(gstStatus!=null)
             {
 
-                if (globalPool.getGst_status())
+                if (gstStatus.equalsIgnoreCase("true"))
                 {
                     linear_gst.setVisibility(View.VISIBLE);
                     Log.d(TAG, "onCreate:IF Status");

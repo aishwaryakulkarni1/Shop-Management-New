@@ -33,13 +33,15 @@
             android:layout_width="0dp"
             android:layout_weight="2"
             android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_printer">
 
             <android.support.v7.widget.AppCompatRadioButton
                 android:layout_width="wrap_content"
                 android:checked="true"
                 style="@style/RadioButton"
                 android:backgroundTint="@color/mustardbrown"
+                android:id="@+id/rb_thermal_print"
                 android:textColor="@color/color_grey"
                 android:text="Thermal Bluetooth Printer"
                 android:textSize="14dp"
@@ -52,6 +54,7 @@
                 android:textSize="14dp"
                 style="@style/RadioButton"
                 android:textColor="@color/color_grey"
+                android:id="@+id/rb_regular_print"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 />

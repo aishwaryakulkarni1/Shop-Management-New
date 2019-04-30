@@ -80,7 +80,7 @@ public class UpdatedShop extends AppCompatActivity implements View.OnClickListen
         input_email = (TextInputEditText) findViewById(R.id.input_email);
         input_pass = (TextInputEditText) findViewById(R.id.input_pass);
         input_address = (TextInputEditText) findViewById(R.id.input_address);
-        input_district = (TextInputEditText) findViewById(R.id.input_district);
+//        input_district = (TextInputEditText) findViewById(R.id.input_district);
         input_state = (TextInputEditText) findViewById(R.id.input_state);
         input_pincode = (TextInputEditText) findViewById(R.id.input_pincode);
         input_shoptype = (TextInputEditText) findViewById(R.id.input_shoptype);
@@ -112,7 +112,7 @@ public class UpdatedShop extends AppCompatActivity implements View.OnClickListen
 
         if (!Validation.hasText(input_name)) ret = false;
         if (!Validation.hasText(input_address)) ret = false;
-        if (!Validation.hasText(input_district)) ret = false;
+//        if (!Validation.hasText(input_district)) ret = false;
         if (!Validation.hasText(input_state)) ret = false;
         if (!Validation.hasText(input_pincode)) ret = false;
         if (!Validation.isPhoneNumber(input_mobile_no, true)) ret = false;
@@ -204,7 +204,7 @@ public class UpdatedShop extends AppCompatActivity implements View.OnClickListen
             {
                 String shopName = input_name.getText().toString();
                 String address = input_address.getText().toString();
-                String district = input_district.getText().toString();
+//                String district = input_district.getText().toString();
                 String state = input_state.getText().toString();
                 String pincode = input_pincode.getText().toString();
                 String mobil_no = input_mobile_no.getText().toString();
@@ -220,7 +220,7 @@ public class UpdatedShop extends AppCompatActivity implements View.OnClickListen
                 Map<String, String> params = new LinkedHashMap<>();
                 params.put(KEY_SNAME, shopName);
                 params.put(KEY_ADDRESS, address);
-                params.put(KEY_DISTRICT, district);
+//                params.put(KEY_DISTRICT, district);
                 params.put(KEY_STATE, state);
                 params.put(KEY_PINCODE, pincode);
                 params.put(KEY_MOBILE_NO, mobil_no);
@@ -304,9 +304,11 @@ public class UpdatedShop extends AppCompatActivity implements View.OnClickListen
                         {
                         JSONObject jsonObject1 = jsonObject.getJSONObject("records");
 
-                        input_name.setText(jsonObject1.getString("s_name"));
-                        input_address.setText(jsonObject1.getString("address"));
-                        input_district.setText(jsonObject1.getString("district"));
+                        String inputName = jsonObject1.getString("s_name");
+                        String inputAddress = jsonObject1.getString("address");
+                        input_name.setText(inputName);
+                        input_address.setText(inputAddress);
+//                        input_district.setText(jsonObject1.getString("district"));
                         input_state.setText(jsonObject1.getString("state"));
 
                         input_pincode.setText(jsonObject1.getString("pincode"));
@@ -316,11 +318,11 @@ public class UpdatedShop extends AppCompatActivity implements View.OnClickListen
                         input_shoptype.setText(jsonObject1.getString("shop_type"));
 
 
-                        input_pincode.setText(jsonObject1.getString("pincode"));
-                        input_mobile_no.setText(jsonObject1.getString("mobile_no"));
-                        input_email.setText(jsonObject1.getString("email_id"));
-                        input_pass.setText(jsonObject1.getString("password"));
-                        input_shoptype.setText(jsonObject1.getString("shop_type"));
+//                        input_pincode.setText(jsonObject1.getString("pincode"));
+//                        input_mobile_no.setText(jsonObject1.getString("mobile_no"));
+//                        input_email.setText(jsonObject1.getString("email_id"));
+//                        input_pass.setText(jsonObject1.getString("password"));
+//                        input_shoptype.setText(jsonObject1.getString("shop_type"));
 
 
                         input_service_type.setText(jsonObject1.getString("type_of_service_provided"));

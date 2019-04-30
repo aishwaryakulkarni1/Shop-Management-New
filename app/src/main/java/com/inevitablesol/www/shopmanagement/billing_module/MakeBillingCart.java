@@ -79,6 +79,7 @@ public class MakeBillingCart extends AppCompatActivity implements View.OnClickLi
     private  ArrayList<ItemDetalisClass> itemDetalisClasses;
     private SwitchCompat switchCompat;
     private double totalTaxableValue=0.0;
+    private SharedPreferences sharedpreferences2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -113,7 +114,7 @@ public class MakeBillingCart extends AppCompatActivity implements View.OnClickLi
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         dbname = (sharedpreferences.getString("dbname", null));
 
-
+        sharedpreferences2 = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
         getAppProductDetails();
 
@@ -130,7 +131,6 @@ public class MakeBillingCart extends AppCompatActivity implements View.OnClickLi
             public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             }
-
 
             @Override
             public void afterTextChanged(Editable s)
@@ -345,10 +345,18 @@ public class MakeBillingCart extends AppCompatActivity implements View.OnClickLi
             Log.d(TAG, "get_allstock:UnitPrice" + itemDetalisClass.getUnit_price());
             Log.d(TAG, "get_allstock:UnitPrice" + itemDetalisClass.getUnit_price());
             Log.d(TAG, "get_allstoc:Status" + itemDetalisClass.getStatus());
-            if(itemDetalisClass.getStatus().equalsIgnoreCase("infinite"))
-            {
-                Log.d(TAG, "get_allstoc: menu Item Status" + itemDetalisClass.getStatus());
+
+            String menuItem = sharedpreferences2.getString("menu_item",null);
+            Log.d(TAG, "onCreate:quotation Status"+menuItem);
+            if(menuItem!=null){
+                if((menuItem.equalsIgnoreCase("no")) && itemDetalisClass.getStatus().equalsIgnoreCase("infinite")){
+
+                }
             }
+//            if()
+//            {
+//                Log.d(TAG, "get_allstoc: menu Item Status" + itemDetalisClass.getStatus());
+//            }
         }
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());

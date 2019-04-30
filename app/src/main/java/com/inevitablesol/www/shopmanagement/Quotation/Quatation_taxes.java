@@ -170,10 +170,10 @@ public class Quatation_taxes extends AppCompatActivity implements View.OnClickLi
         try
         {
 
-            String gststatus=(sharedpreferences2.getString("gst", null));
+            String gststatus = String.valueOf(globalPool.getGst_status());
             Log.d(TAG, "onCreate:gst"+gststatus);
             if(gststatus!=null) {
-                if (globalPool.getGst_status())
+                if (gststatus.equalsIgnoreCase("true"))
                 {
 
                     linear_gst.setVisibility(View.VISIBLE);

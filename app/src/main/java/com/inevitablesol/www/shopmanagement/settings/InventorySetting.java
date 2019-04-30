@@ -168,9 +168,11 @@ public class InventorySetting extends AppCompatActivity
                 {
 
                     case R.id.rb_quotation_yes:
+                        globalPool.setQuotationStatus(true);
                         saveInventoryStatus_quotation("yes");
                         break;
                     case R.id.rb_quotation_no:
+                        globalPool.setQuotationStatus(false);
                         saveInventoryStatus_quotation("No");
                         break;
                 }
@@ -189,9 +191,11 @@ public class InventorySetting extends AppCompatActivity
                 {
 
                     case R.id.rb_discount_yes:
+                        globalPool.setDiscountStatus(true);
                         saveInventoryStatus_discount("yes");
                         break;
                     case R.id.rb_discount_no:
+                        globalPool.setDiscountStatus(false);
                         saveInventoryStatus_discount("No");
                         break;
                 }
@@ -235,9 +239,11 @@ public class InventorySetting extends AppCompatActivity
 
                      case R.id.rb_unit_price_yes:
                           saveInventoryStatus_unit("yes");
+                          globalPool.setUnitPriceStatus(true);
                          break;
                      case R.id.rb_unit_price_no:
                          saveInventoryStatus_unit("No");
+                         globalPool.setUnitPriceStatus(false);
                          break;
                  }
 
@@ -247,7 +253,10 @@ public class InventorySetting extends AppCompatActivity
         sharedpreferences = getSharedPreferences(MySETTINGS, Context.MODE_PRIVATE);
 
         Log.d(TAG, "onCreate: Menu item Status"+globalPool.isMenuItemStatus());
-
+        Log.d(TAG, "onCreate: Quotation status"+globalPool.isQuotationStatus());
+        Log.d(TAG,"onCreate: Discount status"+globalPool.isDiscountStatus());
+        Log.d(TAG,"onCreate: gst status"+globalPool.getGst_status());
+        Log.d(TAG,"onCreate: unit price status"+globalPool.isUnitPriceStatus());
 
         try
         {

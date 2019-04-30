@@ -760,52 +760,58 @@ public class MakeBill_selectCustomer extends AppCompatActivity implements View.O
                 Log.d("Item Details  Billing",resp);
                 try {
                     JSONObject jsonObject= new JSONObject(resp);
-                                    String message= jsonObject.getString("message");
-                       if(!message.equalsIgnoreCase("Data not available"))
-                       {
-
-
-                ItemDetailsParser itemDetailsParser=new ItemDetailsParser(resp);
-                itemDetailsParser.parseItemList();
-                String  selectedItemQty="0";
-                try
-                {
-
-                    String []    p_id           =ItemDetailsParser.product_id;
-                    String []   item_id        =ItemDetailsParser.item_id;
-                    String []   item_name      =ItemDetailsParser.item_name;
-                    String []   stock_qty      =ItemDetailsParser.stock_qt;
-                    String[]   item_mrp        =ItemDetailsParser.item_mrp;
-                    String[]  purchase_price   =ItemDetailsParser.purchase_price;
-                    String[]  gst              =ItemDetailsParser.gst;
-                    String []  totalPrice      =ItemDetailsParser.total_price;
-                    String [] discount         =ItemDetailsParser.discount;
-                    String[] unit_Price        =ItemDetailsParser.unit_price;
-                    String [] hsnCode  =          ItemDetailsParser.hsn;
-                    String[] status=            ItemDetailsParser.status;
-
-                    String[] mUnit=ItemDetailsParser.mUnit;
-                    String [] unit=ItemDetailsParser.unit;
-                    String [] itembarcode=ItemDetailsParser.item_barcode;
-                    String [] shortcut=ItemDetailsParser.shortcut;
-
-
-
-
-                    for(int i=0;i<p_id.length;i++)
+                    String message= jsonObject.getString("message");
+                    if(!message.equalsIgnoreCase("Data not available"))
                     {
-                        if(Integer.parseInt(stock_qty[i])> 0 || status[i].equalsIgnoreCase("infinite"))
+                        ItemDetailsParser itemDetailsParser=new ItemDetailsParser(resp);
+                        itemDetailsParser.parseItemList();
+                        String  selectedItemQty="0";
+                        try
                         {
-                            sqlDataBase.addItemDetails(p_id[i],item_id[i],item_name[i],stock_qty[i],selectedItemQty,item_mrp[i],purchase_price[i],
-                                    totalPrice[i],gst[i],discount[i],unit_Price[i],hsnCode[i],status[i], mUnit[i], unit[i], itembarcode[i], shortcut[i]);
 
-                        }else
-                        {
-                            Log.d(TAG, "onResponse: QTY less then Zero "+Integer.parseInt(stock_qty[i]));
-                            Log.d(TAG, "onResponse: Menu Item "+ status[i]);
+                            String []    p_id           =ItemDetailsParser.product_id;
+                            String []   item_id        =ItemDetailsParser.item_id;
+                            String []   item_name      =ItemDetailsParser.item_name;
+                            String []   stock_qty      =ItemDetailsParser.stock_qt;
+                            String[]   item_mrp        =ItemDetailsParser.item_mrp;
+                            String[]  purchase_price   =ItemDetailsParser.purchase_price;
+                            String[]  gst              =ItemDetailsParser.gst;
+                            String []  totalPrice      =ItemDetailsParser.total_price;
+                            String [] discount         =ItemDetailsParser.discount;
+                            String[] unit_Price        =ItemDetailsParser.unit_price;
+                            String [] hsnCode  =          ItemDetailsParser.hsn;
+                            String[] status=            ItemDetailsParser.status;
+
+                            String[] mUnit=ItemDetailsParser.mUnit;
+                            String [] unit=ItemDetailsParser.unit;
+                            String [] itembarcode=ItemDetailsParser.item_barcode;
+                            String [] shortcut=ItemDetailsParser.shortcut;
+
+                            String m_status = String.valueOf(globalPool.isMenuItemStatus());
+
+                            for(int i=0;i<p_id.length;i++)
+                            {
+                                if(m_status!=null && m_status.equalsIgnoreCase("false")) {
+
+
+                                if (Integer.parseInt(stock_qty[i]) > 0 || !status[i].equalsIgnoreCase("infinite")) {
+                                sqlDataBase.addItemDetails(p_id[i], item_id[i], item_name[i], stock_qty[i], selectedItemQty, item_mrp[i], purchase_price[i],
+                                        totalPrice[i], gst[i], discount[i], unit_Price[i], hsnCode[i], status[i], mUnit[i], unit[i], itembarcode[i], shortcut[i]);
+
+                            }
+//                            else {
+//                                Log.d(TAG, "onResponse: QTY less then Zero " + Integer.parseInt(stock_qty[i]));
+//                                Log.d(TAG, "onResponse: Menu Item " + status[i]);
+//                            }
+
                         }
+                        else if(m_status!=null && m_status.equalsIgnoreCase("true")){
+                            if (Integer.parseInt(stock_qty[i]) > 0 || status[i].equalsIgnoreCase("infinite")) {
+                                sqlDataBase.addItemDetails(p_id[i], item_id[i], item_name[i], stock_qty[i], selectedItemQty, item_mrp[i], purchase_price[i],
+                                        totalPrice[i], gst[i], discount[i], unit_Price[i], hsnCode[i], status[i], mUnit[i], unit[i], itembarcode[i], shortcut[i]);
 
-
+                            }
+                        }
 
                     }
                 }catch (NumberFormatException e)
@@ -825,16 +831,6 @@ public class MakeBill_selectCustomer extends AppCompatActivity implements View.O
                 }
 
                 Log.d("new Db Installed","");
-
-
-
-
-
-
-
-
-
-
             }
         }, new Response.ErrorListener()
         {

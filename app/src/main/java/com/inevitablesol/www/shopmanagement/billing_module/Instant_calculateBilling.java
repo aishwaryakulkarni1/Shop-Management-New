@@ -161,11 +161,11 @@ public class Instant_calculateBilling extends AppCompatActivity implements View.
 
         try
         {
+            String gststatus = String.valueOf(globalPool.getGst_status());
 
-            String gststatus=(sharedpreferences2.getString("gst", null));
             Log.d(TAG, "onCreate:gst"+gststatus);
             if(gststatus!=null) {
-                if (gststatus.equalsIgnoreCase("Yes"))
+                if (gststatus.equalsIgnoreCase("true"))
                 {
 
                     linear_gst.setVisibility(View.VISIBLE);
@@ -669,7 +669,7 @@ public class Instant_calculateBilling extends AppCompatActivity implements View.
             billingData.put("home_delivery", "instant");
             billingData.put("created_by", u_id);
             billingData.put("place_of_supply","99");
-            billingData.put("taxable_value", taxableValue);
+            billingData.put("taxable_value", taxablevalues);
             billingData.put("total_gst", totalGst);
             billingData.put("igst", igst);
             billingData.put("cgst", cgst);
@@ -718,7 +718,7 @@ public class Instant_calculateBilling extends AppCompatActivity implements View.
 
 
                             Intent intent = new Intent(Instant_calculateBilling.this, Billing_OnSuccessCash_PaymentMode.class);
-                                   intent.putExtra("taxableValue",taxableValue);
+                                   intent.putExtra("taxableValue",taxablevalues);
                                    intent.putExtra("totalgst",totalGst);
                                    intent.putExtra("otherCharges",other_charge);
                                    intent.putExtra("shippingCharges",shipping_charge);

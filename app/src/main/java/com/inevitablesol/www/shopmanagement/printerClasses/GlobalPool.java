@@ -203,7 +203,42 @@ public class GlobalPool extends Application
 	}
 
 	private  boolean menuItemStatus=true;
+	private boolean quotationStatus=true;
+	private boolean discountStatus=true;
+	private boolean unitPriceStatus = true;
+	private boolean printerStatus = true;
 
+	public boolean isPrinterStatus() {
+		return printerStatus;
+	}
+
+	public void setPrinterStatus(boolean printerStatus) {
+		this.printerStatus = printerStatus;
+	}
+
+	public boolean isQuotationStatus() {
+		return quotationStatus;
+	}
+
+	public void setQuotationStatus(boolean quotationStatus) {
+		this.quotationStatus = quotationStatus;
+	}
+
+	public boolean isDiscountStatus() {
+		return discountStatus;
+	}
+
+	public void setDiscountStatus(boolean discountStatus) {
+		this.discountStatus = discountStatus;
+	}
+
+	public boolean isUnitPriceStatus() {
+		return unitPriceStatus;
+	}
+
+	public void setUnitPriceStatus(boolean unitPriceStatus) {
+		this.unitPriceStatus = unitPriceStatus;
+	}
 
 	private  String   dbname;
 	private static final String TAG = "GlobalPool";

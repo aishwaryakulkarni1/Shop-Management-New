@@ -456,6 +456,9 @@ public class ItemListForBilling extends RecyclerView.Adapter<ItemListForBilling.
                    Log.d(TAG, "onClick: MUnit"+list.getmUnit());
                    int quantity = Integer.parseInt(qty);
                    quantity++;
+
+
+
                    if(quantity<=Integer.parseInt(stockQty) || status.equalsIgnoreCase("infinite"))
                    {
                        double totalAmont = Double.parseDouble(total_price) * quantity;
